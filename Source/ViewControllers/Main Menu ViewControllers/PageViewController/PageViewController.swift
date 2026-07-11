@@ -66,11 +66,10 @@ class PageViewController: UIViewController {
 	}
 	
 	func setupPageViewController() {
-		pageViewController.willMove(toParent: self)
-		view.addSubview(pageViewController.view)
 		addChild(pageViewController)
+		view.addSubview(pageViewController.view)
 		pageViewController.didMove(toParent: self)
-		pageViewController.view.frame = view.frame
+		pageViewController.view.frame = view.bounds
 		pageViewController.dataSource = self
 		pageViewController.delegate = self
 		
