@@ -154,10 +154,10 @@ class TableViewAddAndDeleteViewController: UIViewController, UITableViewDataSour
 	// MARK: Animations
 	
 	func addFadeAnimation(animations: () -> Void) {
-		animations()
-		
 		let transition = CATransition()
 		transition.duration = 0.25
 		view.layer.add(transition, forKey: "layerAnimation")
+		
+		animations()
 	}
 }
