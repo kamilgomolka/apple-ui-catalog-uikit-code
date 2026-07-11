@@ -1,6 +1,6 @@
 //
 //  PageSheetWithDelegateTransitionViewController.swift
-//  UIKit-Storyboard
+//  UIKit-Swift
 //
 //  Created by Kamil Gomółka on 08/02/2022.
 //
@@ -23,10 +23,10 @@ class PageSheetWithDelegateTransitionViewController: TwoLabelsViewController {
     }
     
     // MARK: Lifecycle
-    
-    override func loadView() {
-        super.loadView()
-        
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         isModalInPresentation = true
         navigationController?.presentationController?.delegate = self
     }
