@@ -38,20 +38,26 @@ class KeyboardHelper: NSObject {
 	// MARK: - Private functions
 	
 	private func addObservers() {
-		NotificationCenter.default.addObserver(self,
-											   selector: #selector(keyboardDidShow(notification:)),
-											   name: UIResponder.keyboardDidShowNotification,
-											   object: nil)
-		
-		NotificationCenter.default.addObserver(self,
-											   selector: #selector(keyboardWillHide(notification:)),
-											   name: UIResponder.keyboardWillHideNotification,
-											   object: nil)
-		
-		NotificationCenter.default.addObserver(self,
-											   selector: #selector(keyboardWillChangeFrame(notification:)),
-											   name: UIResponder.keyboardWillChangeFrameNotification,
-											   object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardDidShow(notification:)),
+            name: UIResponder.keyboardDidShowNotification,
+            object: nil
+        )
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillHide(notification:)),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil
+        )
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillChangeFrame(notification:)),
+            name: UIResponder.keyboardWillChangeFrameNotification,
+            object: nil
+        )
 	}
 	
 	private func removeObservers() {
