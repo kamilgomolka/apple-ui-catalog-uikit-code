@@ -19,11 +19,11 @@ class BaseViewController: UIViewController {
     
     // MARK: Lifecycle
     
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		createKeyboardHelperIfNeeded()
-		keyboardHelper?.loadView()
+		keyboardHelper?.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {

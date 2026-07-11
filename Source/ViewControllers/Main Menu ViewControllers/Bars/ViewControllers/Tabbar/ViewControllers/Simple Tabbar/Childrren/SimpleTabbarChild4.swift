@@ -29,12 +29,12 @@ class SimpleTabbarChild4: SingleLabelViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		view.backgroundColor = .systemGreen
 		
-		print("SimpleTabbarChild4 - loadView")
+		print("SimpleTabbarChild4 - viewDidLoad")
 	}
 	
 	deinit {

@@ -21,8 +21,8 @@ class MainMenuViewController: MenuViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		title = "UIKit-Swift"
 		navigationController?.navigationBar.prefersLargeTitles = true

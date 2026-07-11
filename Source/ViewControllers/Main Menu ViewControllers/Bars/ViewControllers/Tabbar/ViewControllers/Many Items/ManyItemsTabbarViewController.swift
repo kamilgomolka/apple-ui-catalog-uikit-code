@@ -9,8 +9,8 @@ import UIKit
 
 class ManyItemsTabbarViewController: UITabBarController {
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		createViewControllers()
 		

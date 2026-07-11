@@ -80,8 +80,8 @@ class NavigationBarMultipleButtonsViewController: StackViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		navigationItem.leftItemsSupplementBackButton = true
 		

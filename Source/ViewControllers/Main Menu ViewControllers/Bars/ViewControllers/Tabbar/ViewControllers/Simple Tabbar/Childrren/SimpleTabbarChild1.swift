@@ -33,10 +33,10 @@ class SimpleTabbarChild1: UIViewController, UITableViewDataSource, UITableViewDe
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
-		print("SimpleTabbarChild1 - loadView")
+		print("SimpleTabbarChild1 - viewDidLoad")
 		
 		setupTableView()
 	}

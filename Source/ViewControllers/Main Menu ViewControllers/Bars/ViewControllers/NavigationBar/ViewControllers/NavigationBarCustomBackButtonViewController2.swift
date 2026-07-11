@@ -11,8 +11,8 @@ class NavigationBarCustomBackButtonViewController2: BaseNavigationBarViewControl
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 				
 		setupBackButton()
 		enableSwipeToPop()

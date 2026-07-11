@@ -15,8 +15,8 @@ class SimpleTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     // MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		tableView = createTableView()
 		setupTableView()

@@ -30,8 +30,8 @@ class ScrollViewWithPagingViewController: UIViewController {
     
     // MARK: Lifecycle
     
-    override func loadView() {
-        super.loadView()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
         addSubviews()

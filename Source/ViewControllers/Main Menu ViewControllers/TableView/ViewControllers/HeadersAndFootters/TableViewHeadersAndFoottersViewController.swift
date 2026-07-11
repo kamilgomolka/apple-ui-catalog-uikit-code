@@ -13,8 +13,8 @@ class TableViewHeadersAndFoottersViewController: UIViewController, UITableViewDa
 	
 	let tableView = UITableView(frame: .zero, style: .plain)
     
-    override func loadView() {
-        super.loadView()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 		
 		setupTableView()
 	}

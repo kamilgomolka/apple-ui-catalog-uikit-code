@@ -24,8 +24,8 @@ class TextViewDataDetectorsViewController: BaseViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		view.backgroundColor = .systemBackground
 		

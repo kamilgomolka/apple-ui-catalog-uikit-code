@@ -11,8 +11,8 @@ class NavigationBarLargeTitleViewController: BaseNavigationBarViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		///
 		/// To have large title working, additional property should be set in root ViewController

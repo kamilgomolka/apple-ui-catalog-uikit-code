@@ -23,7 +23,7 @@ class KeyboardHelper: NSObject {
 	
 	// MARK: Public functions
 	
-	func loadView() {
+	func viewDidLoad() {
 		addKeyboardHideGesture()
 	}
 	

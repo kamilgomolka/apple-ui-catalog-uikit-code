@@ -30,8 +30,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		setupTableView()
 	}

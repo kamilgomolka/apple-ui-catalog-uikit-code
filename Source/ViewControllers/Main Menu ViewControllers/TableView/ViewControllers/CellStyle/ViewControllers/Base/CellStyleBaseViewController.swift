@@ -15,8 +15,8 @@ class CellStyleBaseViewController: UIViewController, UITableViewDataSource, UITa
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		setupTableView()
 	}

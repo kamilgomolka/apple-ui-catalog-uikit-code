@@ -59,8 +59,8 @@ class ActivityIndicatorViewController: StackViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		stackView.alignment = .center
 		stackView.spacing = 16.0

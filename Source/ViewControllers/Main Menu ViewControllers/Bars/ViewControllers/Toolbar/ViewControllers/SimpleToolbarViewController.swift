@@ -30,8 +30,8 @@ class SimpleToolbarViewController: StackViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		setupToolbar()
 		updateContentInsets()

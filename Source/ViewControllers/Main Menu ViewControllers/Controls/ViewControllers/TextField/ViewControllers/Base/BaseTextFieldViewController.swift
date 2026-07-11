@@ -9,8 +9,8 @@ import UIKit
 
 class BaseTextFieldViewController: StackViewController {
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		attachTextFieldDelegate()
 	}

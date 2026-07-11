@@ -16,8 +16,8 @@ class TableViewSectionIndexViewController: UIViewController, UITableViewDataSour
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		viewModel.loadData()
 		setupTableView()

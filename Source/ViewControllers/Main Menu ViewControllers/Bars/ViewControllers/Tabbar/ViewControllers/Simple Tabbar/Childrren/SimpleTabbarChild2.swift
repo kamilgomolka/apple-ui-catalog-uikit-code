@@ -29,10 +29,10 @@ class SimpleTabbarChild2: SingleLabelViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
-		print("SimpleTabbarChild2 - loadView")
+		print("SimpleTabbarChild2 - viewDidLoad")
 	}
 	
 	deinit {

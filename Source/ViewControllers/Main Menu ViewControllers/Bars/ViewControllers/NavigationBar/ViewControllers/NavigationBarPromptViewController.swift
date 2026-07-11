@@ -11,8 +11,8 @@ class NavigationBarPromptViewController: BaseNavigationBarViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		navigationItem.prompt = "Example prompt text"
 	}

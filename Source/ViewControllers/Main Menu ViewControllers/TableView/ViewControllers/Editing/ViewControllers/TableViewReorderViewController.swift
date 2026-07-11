@@ -16,8 +16,8 @@ class TableViewReorderViewController: UIViewController, UITableViewDataSource, U
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		populateItems()
 		setupTableView()

@@ -107,8 +107,8 @@ class SegmentedControlViewController: StackViewController {
 	
 	// MARK: Lifecycle
 	
-	override func loadView() {
-		super.loadView()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		stackView.alignment = .leading
 		stackView.spacing = 16.0

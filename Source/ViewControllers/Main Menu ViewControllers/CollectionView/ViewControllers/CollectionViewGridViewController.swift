@@ -16,8 +16,8 @@ class CollectionViewGridViewController: UIViewController {
     
     // MARK: Lifecycle
     
-    override func loadView() {
-        super.loadView()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 		
 		setupCollectionView()
     }
