@@ -9,14 +9,14 @@ import Foundation
 
 class TableViewSectionIndexViewModel {
     
-    // MARK: - Properties
+    // MARK: Properties
     
     var letters: [String] = []
     var sections: [String: [Person]] = [:]
     
     private var persons: [Person] = []
     
-    // MARK: - Functions
+    // MARK: Functions
     
     func loadData() {
 		persons = MockDataLoader.shared.persons()

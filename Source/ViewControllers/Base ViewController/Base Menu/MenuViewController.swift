@@ -9,12 +9,12 @@ import UIKit
 
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let items: [MenuItem]
 	let tableView = UITableView(frame: .zero, style: .insetGrouped)
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	init(items: [MenuItem]) {
 		self.items = items
@@ -28,7 +28,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		super.init(coder: coder)
 	}
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -49,7 +49,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return items.count
@@ -65,7 +65,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		return cell
 	}
 	
-	// MARK: - UITableViewDelegate
+	// MARK: UITableViewDelegate
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)

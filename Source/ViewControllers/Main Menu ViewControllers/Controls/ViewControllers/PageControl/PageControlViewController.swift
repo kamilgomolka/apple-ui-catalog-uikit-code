@@ -9,7 +9,7 @@ import UIKit
 
 class PageControlViewController: BaseViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var threePagesLabel: UILabel = {
 		let label = UILabel()
@@ -64,7 +64,7 @@ class PageControlViewController: BaseViewController {
 		return pageControl
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -74,7 +74,7 @@ class PageControlViewController: BaseViewController {
 		createConstraints()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	func initialize() {
 		view.backgroundColor = UIColor.systemBackground
@@ -110,7 +110,7 @@ class PageControlViewController: BaseViewController {
 		prominentPageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 	}
 	
-	// MARK: - PageControl value change
+	// MARK: PageControl value change
 			
 	func startObservingPageControlValueChange() {
 		threePagesPageControl.addTarget(self, action: #selector(pageControlValueChanged(sender:)), for: .valueChanged)

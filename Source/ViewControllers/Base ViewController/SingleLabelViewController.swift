@@ -9,7 +9,7 @@ import UIKit
 
 class SingleLabelViewController: UIViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let withCloseButton: Bool
 	let backgroundColor: UIColor
@@ -23,7 +23,7 @@ class SingleLabelViewController: UIViewController {
 		return label
 	}()
 	
-	// MARK: - Init
+	// MARK: Init
 
 	init(labelText: String,
 		 withCloseButton: Bool = false,
@@ -43,7 +43,7 @@ class SingleLabelViewController: UIViewController {
 		super.init(coder: coder)
 	}
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -73,7 +73,7 @@ class SingleLabelViewController: UIViewController {
         )
 	}
 	
-	// MARK: - Actions
+	// MARK: Actions
 	
 	@objc func close() {
 		dismiss(animated: true)

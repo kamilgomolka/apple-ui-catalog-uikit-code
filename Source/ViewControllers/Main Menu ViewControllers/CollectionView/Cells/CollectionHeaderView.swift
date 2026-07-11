@@ -9,7 +9,7 @@ import UIKit
 
 class CollectionHeaderView: UICollectionReusableView {
     
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "CollectionHeaderView"
 	
@@ -22,7 +22,7 @@ class CollectionHeaderView: UICollectionReusableView {
 		return label
 	}()
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)

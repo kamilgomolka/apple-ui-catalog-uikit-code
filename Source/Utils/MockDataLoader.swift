@@ -9,11 +9,11 @@ import Foundation
 
 class MockDataLoader {
 	
-	// MARK: - Singleton
+	// MARK: Singleton
 	
 	static let shared = MockDataLoader()
 	
-	// MARK: - Getting mock data
+	// MARK: Getting mock data
 	
 	func longText() -> String? {
 		return text(fileName: "mockLongText")
@@ -44,7 +44,7 @@ class MockDataLoader {
 		return array
 	}
 	
-	// MARK: - Private functions
+	// MARK: Private functions
 	
 	func text(fileName: String) -> String? {
 		guard let path = Bundle.main.path(forResource: fileName, ofType: "txt") else {

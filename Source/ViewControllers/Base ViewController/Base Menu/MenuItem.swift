@@ -12,12 +12,12 @@ typealias ViewControllerProviderClosure = () -> UIViewController
 
 struct MenuItem {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let name: String
 	let clickHandler: MenuItemClickHandler
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	init(name: String, clickHandler: @escaping MenuItemClickHandler) {
 		self.name = name

@@ -9,7 +9,7 @@ import UIKit
 
 class ButtonStylesViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let clicksCounter = ButtonClicksCounter()
 	
@@ -45,7 +45,7 @@ class ButtonStylesViewController: StackViewController {
 		return [plainButton, grayButton, tintedButton, filledButton]
 	}
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -53,7 +53,7 @@ class ButtonStylesViewController: StackViewController {
 		stackView.alignment = .leading
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()

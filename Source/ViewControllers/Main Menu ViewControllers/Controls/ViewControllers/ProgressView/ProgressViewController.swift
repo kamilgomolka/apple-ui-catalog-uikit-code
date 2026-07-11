@@ -9,7 +9,7 @@ import UIKit
 
 class ProgressViewController: BaseViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var label1: UILabel = {
 		let label = UILabel()
@@ -42,7 +42,7 @@ class ProgressViewController: BaseViewController {
 		return progressView
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -52,7 +52,7 @@ class ProgressViewController: BaseViewController {
 		createConstraints()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	func addSubviews() {
 		view.addSubview(label1)

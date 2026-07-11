@@ -9,7 +9,7 @@ import UIKit
 
 class CellAccessoryTypeViewController: SimpleTableViewController {
     
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return CellAccessoryTypeItem.allCases.count

@@ -9,7 +9,7 @@ import UIKit
 
 class SimpleToolbarViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var label: UILabel = {
 		let label = UILabel()
@@ -28,7 +28,7 @@ class SimpleToolbarViewController: StackViewController {
 		return toolbar
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -37,7 +37,7 @@ class SimpleToolbarViewController: StackViewController {
 		updateContentInsets()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()

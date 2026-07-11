@@ -9,7 +9,7 @@ import UIKit
 
 class ScrollViewTwoDirectionsViewController: UIViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var scrollView: UIScrollView = {
 		let scrollView = UIScrollView()
@@ -33,7 +33,7 @@ class ScrollViewTwoDirectionsViewController: UIViewController {
 		return stackView
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -43,7 +43,7 @@ class ScrollViewTwoDirectionsViewController: UIViewController {
 		createConstraints()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	func addSubviews() {
 		view.addSubview(scrollView)

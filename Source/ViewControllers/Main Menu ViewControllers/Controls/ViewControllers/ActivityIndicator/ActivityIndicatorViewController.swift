@@ -9,7 +9,7 @@ import UIKit
 
 class ActivityIndicatorViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var mediumLabel: UILabel = {
 		let label = UILabel()
@@ -57,7 +57,7 @@ class ActivityIndicatorViewController: StackViewController {
 		return activityIndicator
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -66,7 +66,7 @@ class ActivityIndicatorViewController: StackViewController {
 		stackView.spacing = 16.0
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()

@@ -9,7 +9,7 @@ import UIKit
 
 class TwoLabelsViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties
     
     let withCloseButton: Bool
     let backgroundColor: UIColor
@@ -33,7 +33,7 @@ class TwoLabelsViewController: UIViewController {
         return label
     }()
     
-    // MARK: - Init
+    // MARK: Init
     
     init(title: String,
          subtitle: String,
@@ -55,7 +55,7 @@ class TwoLabelsViewController: UIViewController {
         super.init(coder: coder)
     }
     
-    // MARK: - Lifecycle
+    // MARK: Lifecycle
     
     override func loadView() {
         super.loadView()
@@ -91,7 +91,7 @@ class TwoLabelsViewController: UIViewController {
         )
     }
     
-    // MARK: - Actions
+    // MARK: Actions
     
     @objc func close() {
         dismiss(animated: true)

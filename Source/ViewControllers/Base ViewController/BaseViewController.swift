@@ -9,7 +9,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties
     
     var scrollViewToAdjst: UIScrollView? {
         return nil
@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
 	
 	var keyboardHelper: KeyboardHelper? = nil
     
-    // MARK: - Lifecycle
+    // MARK: Lifecycle
     
 	override func loadView() {
 		super.loadView()
@@ -38,7 +38,7 @@ class BaseViewController: UIViewController {
 		keyboardHelper?.viewWillAppear(animated)
     }
     
-    // MARK: - Private functions
+    // MARK: Private functions
 	
 	private func createKeyboardHelperIfNeeded() {
 		if let scrollViewToAdjst = scrollViewToAdjst {

@@ -9,12 +9,12 @@ import UIKit
 
 class TableViewSectionIndexViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let tableView = UITableView(frame: .zero, style: .plain)
 	let viewModel = TableViewSectionIndexViewModel()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -23,7 +23,7 @@ class TableViewSectionIndexViewController: UIViewController, UITableViewDataSour
 		setupTableView()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setupTableView() {
 		tableView.dataSource = self
@@ -38,7 +38,7 @@ class TableViewSectionIndexViewController: UIViewController, UITableViewDataSour
 		tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return viewModel.sections.count
@@ -69,7 +69,7 @@ class TableViewSectionIndexViewController: UIViewController, UITableViewDataSour
 		return cell
 	}
 	
-	// MARK: - UITableViewDelegate
+	// MARK: UITableViewDelegate
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)

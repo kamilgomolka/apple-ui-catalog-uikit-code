@@ -9,7 +9,7 @@ import UIKit
 
 class ToolbarAndTableViewController: BaseToolbarViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var toolbar: UIToolbar = {
 		//
@@ -20,7 +20,7 @@ class ToolbarAndTableViewController: BaseToolbarViewController {
 		return toolbar
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -29,7 +29,7 @@ class ToolbarAndTableViewController: BaseToolbarViewController {
 		updateContentInsets()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setupToolbar() {
 		view.addSubview(toolbar)

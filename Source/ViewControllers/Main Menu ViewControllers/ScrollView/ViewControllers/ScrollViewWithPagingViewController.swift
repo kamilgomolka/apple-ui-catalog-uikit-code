@@ -9,7 +9,7 @@ import UIKit
 
 class ScrollViewWithPagingViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties
     
     let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -28,7 +28,7 @@ class ScrollViewWithPagingViewController: UIViewController {
         return stackView
     }()
     
-    // MARK: - Lifecycle
+    // MARK: Lifecycle
     
     override func loadView() {
         super.loadView()
@@ -38,7 +38,7 @@ class ScrollViewWithPagingViewController: UIViewController {
         createConstraints()
     }
     
-    // MARK: - Initialization
+    // MARK: Initialization
     
     func addSubviews() {
         view.addSubview(scrollView)

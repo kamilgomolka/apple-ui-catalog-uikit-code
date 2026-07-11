@@ -9,12 +9,12 @@ import UIKit
 
 class TableViewReorderViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let tableView = UITableView(frame: .zero, style: .plain)
 	var items: [(index: Int, name: String)] = []
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -23,7 +23,7 @@ class TableViewReorderViewController: UIViewController, UITableViewDataSource, U
 		setupTableView()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setupTableView() {
 		tableView.dataSource = self
@@ -40,13 +40,13 @@ class TableViewReorderViewController: UIViewController, UITableViewDataSource, U
 		tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
 	
-	// MARK: - Modify data
+	// MARK: Modify data
 	
 	func populateItems() {
 		items = (0..<20).map { (index: $0, name: "Item [\($0)]") }
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return items.count
@@ -61,7 +61,7 @@ class TableViewReorderViewController: UIViewController, UITableViewDataSource, U
 		return cell
 	}
 	
-	// MARK: - UITableViewDelegate
+	// MARK: UITableViewDelegate
 	
 	func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
 		return .none

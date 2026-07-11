@@ -10,7 +10,7 @@ import UIKit
 
 class NavigationBarGroupedLargeTitleViewController: BaseNavigationBarViewController {
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -25,13 +25,13 @@ class NavigationBarGroupedLargeTitleViewController: BaseNavigationBarViewControl
 		navigationItem.largeTitleDisplayMode = .always
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	override func createTableView() -> UITableView {
 		return UITableView(frame: .zero, style: .insetGrouped)
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	override func numberOfSections(in tableView: UITableView) -> Int {
 		return 5

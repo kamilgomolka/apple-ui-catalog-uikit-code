@@ -9,11 +9,11 @@ import UIKit
 
 class CellSeparatorInsetsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let tableView = UITableView(frame: .zero, style: .plain)
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -21,7 +21,7 @@ class CellSeparatorInsetsViewController: UIViewController, UITableViewDataSource
 		setupTableView()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setupTableView() {
 		tableView.dataSource = self
@@ -41,7 +41,7 @@ class CellSeparatorInsetsViewController: UIViewController, UITableViewDataSource
 		tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return CellSeparatorInsetsSection.allCases.count

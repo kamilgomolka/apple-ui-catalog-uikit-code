@@ -9,7 +9,7 @@ import UIKit
 
 class SwitchViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var standardSwitchLabel: UILabel = {
 		let label = UILabel()
@@ -53,7 +53,7 @@ class SwitchViewController: StackViewController {
 		return switchControl
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -62,7 +62,7 @@ class SwitchViewController: StackViewController {
 		startObservingSwitchValueChange()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()
@@ -75,7 +75,7 @@ class SwitchViewController: StackViewController {
 		stackView.addArrangedSubview(customColorsSwitch)
 	}
 	
-	// MARK: - Functions
+	// MARK: Functions
 	
 	func startObservingSwitchValueChange() {
 		standardSwitch.addTarget(

@@ -9,7 +9,7 @@ import UIKit
 
 class ButtonToggleViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var plainButton: UIButton = {
 		let config = UIButton.Configuration.plain()
@@ -47,7 +47,7 @@ class ButtonToggleViewController: StackViewController {
 		return [plainButton, grayButton, tintedButton, filledButton]
 	}
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -55,7 +55,7 @@ class ButtonToggleViewController: StackViewController {
 		stackView.alignment = .leading
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()

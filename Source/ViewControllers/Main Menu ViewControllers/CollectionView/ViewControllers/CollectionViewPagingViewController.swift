@@ -32,13 +32,13 @@ enum CollectionViewPagingSectionType: Int, CaseIterable {
 
 class CollectionViewPagingViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties
     
     let margin: CGFloat = 8.0
     let headerElementKind = "headerElementKind"
 	let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     
-    // MARK: - Lifecycle
+    // MARK: Lifecycle
     
     override func loadView() {
         super.loadView()
@@ -68,7 +68,7 @@ class CollectionViewPagingViewController: UIViewController {
 		collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
-    // MARK: - Layout creation
+    // MARK: Layout creation
     
     func createLayout() -> UICollectionViewLayout {
         return UICollectionViewCompositionalLayout(sectionProvider: provideSection,

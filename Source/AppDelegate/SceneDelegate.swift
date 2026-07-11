@@ -9,7 +9,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
-    // MARK: - UIWindowSceneDelegate
+    // MARK: UIWindowSceneDelegate
 
     var window: UIWindow?
     
@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
     }
     
-    // MARK: - Private functions
+    // MARK: Private functions
     
     private func createWindow(scene: UIScene) -> UIWindow? {
         guard let windowScene = scene as? UIWindowScene else {

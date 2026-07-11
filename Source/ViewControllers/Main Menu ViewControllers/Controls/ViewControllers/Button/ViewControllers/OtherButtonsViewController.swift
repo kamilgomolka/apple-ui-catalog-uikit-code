@@ -9,7 +9,7 @@ import UIKit
 
 class OtherButtonsViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var buttonDetailDisclosure: UIButton = {
 		let button = UIButton(type: .detailDisclosure)
@@ -108,7 +108,7 @@ class OtherButtonsViewController: StackViewController {
 	
 	let clicksCounter = ButtonClicksCounter()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -116,7 +116,7 @@ class OtherButtonsViewController: StackViewController {
 		stackView.alignment = .leading
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()

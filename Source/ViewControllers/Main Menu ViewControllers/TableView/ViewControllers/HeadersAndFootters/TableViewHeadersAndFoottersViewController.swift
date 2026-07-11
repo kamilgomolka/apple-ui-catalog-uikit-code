@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewHeadersAndFoottersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let tableView = UITableView(frame: .zero, style: .plain)
     
@@ -36,7 +36,7 @@ class TableViewHeadersAndFoottersViewController: UIViewController, UITableViewDa
 		tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
-    // MARK: - UITableViewDataSource
+    // MARK: UITableViewDataSource
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 10
@@ -69,7 +69,7 @@ class TableViewHeadersAndFoottersViewController: UIViewController, UITableViewDa
         return cell
     }
     
-    // MARK: - UITableViewDelegate
+    // MARK: UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

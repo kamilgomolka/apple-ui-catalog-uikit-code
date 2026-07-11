@@ -9,11 +9,11 @@ import UIKit
 
 class SimpleTabbarChild1: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let tableView = UITableView(frame: .zero, style: .plain)
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	init() {
 		super.init(nibName: nil, bundle: nil)
@@ -31,7 +31,7 @@ class SimpleTabbarChild1: UIViewController, UITableViewDataSource, UITableViewDe
 		setupTabbarItem()
 	}
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -57,7 +57,7 @@ class SimpleTabbarChild1: UIViewController, UITableViewDataSource, UITableViewDe
 		print("SimpleTabbarChild1 - viewWillDisappear")
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setupTableView() {
 		tableView.dataSource = self
@@ -77,7 +77,7 @@ class SimpleTabbarChild1: UIViewController, UITableViewDataSource, UITableViewDe
 		tabBarItem.image = UIImage(systemName: "star.fill")
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return 1
@@ -95,7 +95,7 @@ class SimpleTabbarChild1: UIViewController, UITableViewDataSource, UITableViewDe
 		return cell
 	}
 	
-	// MARK: - UITableViewDelegate
+	// MARK: UITableViewDelegate
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)

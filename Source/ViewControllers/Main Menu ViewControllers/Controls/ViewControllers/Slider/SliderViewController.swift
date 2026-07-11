@@ -9,7 +9,7 @@ import UIKit
 
 class SliderViewController: BaseViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var titleLabel: UILabel = {
 		let label = UILabel()
@@ -35,7 +35,7 @@ class SliderViewController: BaseViewController {
 		return slider
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -45,7 +45,7 @@ class SliderViewController: BaseViewController {
 		createConstraints()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	func initialize() {
 		view.backgroundColor = UIColor.systemBackground
@@ -72,7 +72,7 @@ class SliderViewController: BaseViewController {
 		slider.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 	}
 	
-	// MARK: - Slider value change
+	// MARK: Slider value change
 			
 	func startObservingSliderValueChange() {
 		slider.addTarget(self, action: #selector(sliderValueChanged), for: .valueChanged)

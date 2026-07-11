@@ -9,7 +9,7 @@ import UIKit
 
 class PageViewController: UIViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var segmentedControl: UISegmentedControl = {
 		let segmentedControl = UISegmentedControl(items: [
@@ -32,7 +32,7 @@ class PageViewController: UIViewController {
 	
 	var viewControllers: [UIViewController] = []
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -45,7 +45,7 @@ class PageViewController: UIViewController {
 		startObservingSegmentedControlValueChange()
 	}
 	
-	// MARK: - Functions
+	// MARK: Functions
 	
 	func setupNavigationBar() {
 		navigationItem.titleView = segmentedControl

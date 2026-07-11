@@ -9,7 +9,7 @@ import UIKit
 
 class LabelFontWeightsViewController: StackViewController {
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()

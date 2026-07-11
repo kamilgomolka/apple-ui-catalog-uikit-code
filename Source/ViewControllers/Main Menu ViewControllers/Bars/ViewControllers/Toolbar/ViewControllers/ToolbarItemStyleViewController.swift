@@ -9,7 +9,7 @@ import UIKit
 
 class ToolbarItemStyleViewController: UIViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var toolbar: UIToolbar = {
 		let toolbar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: 300.0, height: 44.0))
@@ -17,7 +17,7 @@ class ToolbarItemStyleViewController: UIViewController {
 		return toolbar
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -27,7 +27,7 @@ class ToolbarItemStyleViewController: UIViewController {
 		setupToolbar()
 	}
 	
-	// MARK: - Functions
+	// MARK: Functions
 	
 	func setupToolbar() {
 		view.addSubview(toolbar)

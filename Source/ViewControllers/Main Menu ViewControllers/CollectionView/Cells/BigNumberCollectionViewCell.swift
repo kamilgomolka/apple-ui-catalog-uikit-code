@@ -9,7 +9,7 @@ import UIKit
 
 class BigNumberCollectionViewCell: UICollectionViewCell {
     
-    // MARK: - Properties
+    // MARK: Properties
     
 	static let identifier = "BigNumberCollectionViewCell"
     
@@ -20,7 +20,7 @@ class BigNumberCollectionViewCell: UICollectionViewCell {
 		return label
 	}()
     
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -45,7 +45,7 @@ class BigNumberCollectionViewCell: UICollectionViewCell {
 		label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
 	}
 	
-    // MARK: - Update cell with data
+    // MARK: Update cell with data
     
     func updateView(number: Int) {
         label.text = "\(number)"

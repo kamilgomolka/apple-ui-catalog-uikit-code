@@ -9,7 +9,7 @@ import UIKit
 
 class TextViewEditableViewController: BaseViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var textView: UITextView = {
 		let textView = UITextView()
@@ -20,7 +20,7 @@ class TextViewEditableViewController: BaseViewController {
 		return textView
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -31,7 +31,7 @@ class TextViewEditableViewController: BaseViewController {
 		createConstraints()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	func addSubviews() {
 		view.addSubview(textView)

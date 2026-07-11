@@ -9,7 +9,7 @@ import UIKit
 
 class StepperViewController: BaseViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var titleLabel: UILabel = {
 		let label = UILabel()
@@ -35,7 +35,7 @@ class StepperViewController: BaseViewController {
 		return stepper
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -45,7 +45,7 @@ class StepperViewController: BaseViewController {
 		createConstraints()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	func initialize() {
 		view.backgroundColor = UIColor.systemBackground
@@ -70,7 +70,7 @@ class StepperViewController: BaseViewController {
 		stepper.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 	}
 	
-	// MARK: - Stepper value change
+	// MARK: Stepper value change
 			
 	func startObservingStepperValueChange() {
 		stepper.addTarget(self, action: #selector(stepperValueChanged), for: .valueChanged)

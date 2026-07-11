@@ -9,13 +9,13 @@ import UIKit
 
 class TableViewStyleInsetGroupedViewController: SimpleTableViewController {
     
-	// MARK: - Setup
+	// MARK: Setup
 	
 	override func createTableView() -> UITableView {
 		return UITableView(frame: .zero, style: .insetGrouped)
 	}
     
-    // MARK: - UITableViewDataSource
+    // MARK: UITableViewDataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 3

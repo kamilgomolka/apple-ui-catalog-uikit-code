@@ -9,13 +9,13 @@ import UIKit
 
 class TableViewAddAndDeleteViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let tableView = UITableView(frame: .zero, style: .plain)
 	var items: [(index: Int, name: String)] = []
 	var editMode = false
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -25,7 +25,7 @@ class TableViewAddAndDeleteViewController: UIViewController, UITableViewDataSour
 		updateNavigationBar()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setupTableView() {
 		tableView.dataSource = self
@@ -53,7 +53,7 @@ class TableViewAddAndDeleteViewController: UIViewController, UITableViewDataSour
 		}
 	}
 	
-	// MARK: - Actions
+	// MARK: Actions
 	
 	@objc func startEdition() {
 		addFadeAnimation {
@@ -73,7 +73,7 @@ class TableViewAddAndDeleteViewController: UIViewController, UITableViewDataSour
 		}
 	}
 	
-	// MARK: - Modify data
+	// MARK: Modify data
 	
 	func populateItems() {
 		items = (0..<20).map { (index: $0, name: "Item [\($0)]") }
@@ -97,7 +97,7 @@ class TableViewAddAndDeleteViewController: UIViewController, UITableViewDataSour
 		tableView.deleteRows(at: [indexPath], with: .automatic)
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		if editMode {
@@ -120,7 +120,7 @@ class TableViewAddAndDeleteViewController: UIViewController, UITableViewDataSour
 		return cell
 	}
 	
-	// MARK: - UITableViewDelegate
+	// MARK: UITableViewDelegate
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
@@ -151,7 +151,7 @@ class TableViewAddAndDeleteViewController: UIViewController, UITableViewDataSour
 		}
 	}
 	
-	// MARK: - Animations
+	// MARK: Animations
 	
 	func addFadeAnimation(animations: () -> Void) {
 		animations()

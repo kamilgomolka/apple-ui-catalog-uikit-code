@@ -9,7 +9,7 @@ import UIKit
 
 class StackViewController: BaseViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	override var scrollViewToAdjst: UIScrollView? {
 		return scrollView
@@ -39,7 +39,7 @@ class StackViewController: BaseViewController {
 		return stackView
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -50,7 +50,7 @@ class StackViewController: BaseViewController {
 		createConstraints()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	func addSubviews() {
 		view.addSubview(scrollView)

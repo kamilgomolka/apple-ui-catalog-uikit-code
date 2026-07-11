@@ -9,11 +9,11 @@ import UIKit
 
 class ZeroSeparatorInsetTableViewCell: UITableViewCell {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "ZeroSeparatorInsetTableViewCell"
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -27,7 +27,7 @@ class ZeroSeparatorInsetTableViewCell: UITableViewCell {
 		setup()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setup() {
 		separatorInset = .zero

@@ -9,11 +9,11 @@ import UIKit
 
 class CellStyleBaseViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let tableView = UITableView(frame: .zero, style: .insetGrouped)
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -21,7 +21,7 @@ class CellStyleBaseViewController: UIViewController, UITableViewDataSource, UITa
 		setupTableView()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setupTableView() {
 		tableView.dataSource = self
@@ -41,7 +41,7 @@ class CellStyleBaseViewController: UIViewController, UITableViewDataSource, UITa
 		tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return CellStyleSection.allCases.count

@@ -9,11 +9,11 @@ import UIKit
 
 class DefaultStyleTableViewCell: UITableViewCell {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "DefaultStyleTableViewCell"
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: .default, reuseIdentifier: reuseIdentifier)

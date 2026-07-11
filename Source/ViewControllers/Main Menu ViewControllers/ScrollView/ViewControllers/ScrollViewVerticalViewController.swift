@@ -9,7 +9,7 @@ import UIKit
 
 class ScrollViewVerticalViewController: UIViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var scrollView: UIScrollView = {
 		let scrollView = UIScrollView()
@@ -32,7 +32,7 @@ class ScrollViewVerticalViewController: UIViewController {
 		return label
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -42,7 +42,7 @@ class ScrollViewVerticalViewController: UIViewController {
 		createConstraints()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	func addSubviews() {
 		view.addSubview(scrollView)

@@ -9,19 +9,19 @@ import UIKit
 
 class KeyboardHelper: NSObject {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	private weak var viewController: UIViewController?
 	private weak var scrollView: UIScrollView?
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	init(viewController: UIViewController, scrollView: UIScrollView) {
 		self.viewController = viewController
 		self.scrollView = scrollView
 	}
 	
-	// MARK: - Public functions
+	// MARK: Public functions
 	
 	func loadView() {
 		addKeyboardHideGesture()
@@ -35,7 +35,7 @@ class KeyboardHelper: NSObject {
 		removeObservers()
 	}
 	
-	// MARK: - Private functions
+	// MARK: Private functions
 	
 	private func addObservers() {
         NotificationCenter.default.addObserver(

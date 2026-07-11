@@ -9,11 +9,11 @@ import UIKit
 
 class Value1StyleTableViewCell: UITableViewCell {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "Value1StyleTableViewCell"
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: .value1, reuseIdentifier: reuseIdentifier)

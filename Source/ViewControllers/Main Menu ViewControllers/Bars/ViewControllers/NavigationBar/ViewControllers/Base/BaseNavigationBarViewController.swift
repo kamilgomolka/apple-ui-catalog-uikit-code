@@ -9,11 +9,11 @@ import UIKit
 
 class BaseNavigationBarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var tableView: UITableView?
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -22,7 +22,7 @@ class BaseNavigationBarViewController: UIViewController, UITableViewDataSource, 
 		setupTableView()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func createTableView() -> UITableView {
 		return UITableView(frame: .zero, style: .plain)
@@ -45,7 +45,7 @@ class BaseNavigationBarViewController: UIViewController, UITableViewDataSource, 
 		tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return 1
@@ -63,7 +63,7 @@ class BaseNavigationBarViewController: UIViewController, UITableViewDataSource, 
 		return cell
 	}
 	
-	// MARK: - UITableViewDelegate
+	// MARK: UITableViewDelegate
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)

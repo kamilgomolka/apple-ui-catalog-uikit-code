@@ -9,7 +9,7 @@ import UIKit
 
 class PageSheetWithDelegateTransitionViewController: TwoLabelsViewController {
     
-    // MARK: - Init
+    // MARK: Init
     
     init() {
         super.init(
@@ -22,7 +22,7 @@ class PageSheetWithDelegateTransitionViewController: TwoLabelsViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Lifecycle
+    // MARK: Lifecycle
     
     override func loadView() {
         super.loadView()
@@ -40,7 +40,7 @@ class PageSheetWithDelegateTransitionViewController: TwoLabelsViewController {
         )
     }
     
-    // MARK: - Actions
+    // MARK: Actions
     
     @objc func saveAndClose() {
         
@@ -52,7 +52,7 @@ class PageSheetWithDelegateTransitionViewController: TwoLabelsViewController {
     }
 }
 
-// MARK: - UIAdaptivePresentationControllerDelegate
+// MARK: UIAdaptivePresentationControllerDelegate
 
 extension PageSheetWithDelegateTransitionViewController: UIAdaptivePresentationControllerDelegate {
     

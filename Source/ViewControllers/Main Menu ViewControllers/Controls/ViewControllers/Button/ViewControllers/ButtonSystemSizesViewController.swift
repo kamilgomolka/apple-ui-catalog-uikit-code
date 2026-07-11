@@ -9,11 +9,11 @@ import UIKit
 
 class ButtonSystemSizesViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let clicksCounter = ButtonClicksCounter()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -21,7 +21,7 @@ class ButtonSystemSizesViewController: StackViewController {
 		stackView.alignment = .leading
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()

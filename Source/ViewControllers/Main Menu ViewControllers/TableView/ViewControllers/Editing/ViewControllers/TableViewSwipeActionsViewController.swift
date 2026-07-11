@@ -9,12 +9,12 @@ import UIKit
 
 class TableViewSwipeActionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let tableView = UITableView(frame: .zero, style: .plain)
 	var items: [String] = []
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -23,7 +23,7 @@ class TableViewSwipeActionsViewController: UIViewController, UITableViewDataSour
 		setupTableView()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setupTableView() {
 		tableView.dataSource = self
@@ -38,7 +38,7 @@ class TableViewSwipeActionsViewController: UIViewController, UITableViewDataSour
 		tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
 	
-	// MARK: - Modify data
+	// MARK: Modify data
 	
 	func populateItems() {
 		items = (0..<20).map { "Item [\($0)]: Long text 1, long text 2, long text 3, long text 4, long text 5, long text 6" }
@@ -49,7 +49,7 @@ class TableViewSwipeActionsViewController: UIViewController, UITableViewDataSour
 		tableView.deleteRows(at: [indexPath], with: .automatic)
 	}
 	
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return items.count
@@ -68,7 +68,7 @@ class TableViewSwipeActionsViewController: UIViewController, UITableViewDataSour
 		return cell
 	}
 	
-	// MARK: - UITableViewDelegate
+	// MARK: UITableViewDelegate
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)

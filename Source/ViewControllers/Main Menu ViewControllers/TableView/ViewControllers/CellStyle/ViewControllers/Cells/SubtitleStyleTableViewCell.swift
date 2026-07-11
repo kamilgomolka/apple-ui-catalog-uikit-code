@@ -9,11 +9,11 @@ import UIKit
 
 class SubtitleStyleTableViewCell: UITableViewCell {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "SubtitleStyleTableViewCell"
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)

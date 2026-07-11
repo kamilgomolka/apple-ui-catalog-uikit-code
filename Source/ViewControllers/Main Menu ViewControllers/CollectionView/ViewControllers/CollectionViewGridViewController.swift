@@ -9,12 +9,12 @@ import UIKit
 
 class CollectionViewGridViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: Properties
     
     let margin: CGFloat = 8.0
 	let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     
-    // MARK: - Lifecycle
+    // MARK: Lifecycle
     
     override func loadView() {
         super.loadView()
@@ -40,7 +40,7 @@ class CollectionViewGridViewController: UIViewController {
 		collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 	}
     
-    // MARK: - Layout creation
+    // MARK: Layout creation
     
     func createLayout() -> UICollectionViewLayout {
 		//

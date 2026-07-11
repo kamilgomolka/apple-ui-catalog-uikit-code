@@ -9,7 +9,7 @@ import UIKit
 
 class SimpleTabbarChild3: SingleLabelViewController {
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	init() {
 		super.init(labelText: "Child3")
@@ -27,7 +27,7 @@ class SimpleTabbarChild3: SingleLabelViewController {
 		setupTabbarItem()
 	}
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -53,7 +53,7 @@ class SimpleTabbarChild3: SingleLabelViewController {
 		print("SimpleTabbarChild3 - viewWillDisappear")
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setupTabbarItem() {
 		tabBarItem.title = "Child3"

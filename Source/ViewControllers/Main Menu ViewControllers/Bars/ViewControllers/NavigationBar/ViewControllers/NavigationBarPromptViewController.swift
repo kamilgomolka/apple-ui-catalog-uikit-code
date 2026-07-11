@@ -9,7 +9,7 @@ import UIKit
 
 class NavigationBarPromptViewController: BaseNavigationBarViewController {
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()

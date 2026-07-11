@@ -9,7 +9,7 @@ import UIKit
 
 class MainMenuViewController: MenuViewController {
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	init() {
 		super.init(items: MainMenuItems.all)
@@ -19,7 +19,7 @@ class MainMenuViewController: MenuViewController {
 		super.init(coder: coder)
 	}
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()

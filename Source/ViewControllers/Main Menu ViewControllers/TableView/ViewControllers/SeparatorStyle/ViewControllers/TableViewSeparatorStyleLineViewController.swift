@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewSeparatorStyleLineViewController: SimpleTableViewController {
     
-	// MARK: - Setup
+	// MARK: Setup
 	
 	override func setupTableView() {
 		super.setupTableView()

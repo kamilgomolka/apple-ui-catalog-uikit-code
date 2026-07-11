@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewSelectionSingleViewController: SimpleTableViewController {
 	
-	// MARK: - UITableViewDelegate
+	// MARK: UITableViewDelegate
 	
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		

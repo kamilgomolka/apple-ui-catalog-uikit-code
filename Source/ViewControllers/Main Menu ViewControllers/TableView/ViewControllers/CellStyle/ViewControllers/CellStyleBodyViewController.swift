@@ -9,7 +9,7 @@ import UIKit
 
 class CellStyleBodyViewController: CellStyleBaseViewController {
     
-	// MARK: - UITableViewDataSource
+	// MARK: UITableViewDataSource
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = super.tableView(tableView, cellForRowAt: indexPath)

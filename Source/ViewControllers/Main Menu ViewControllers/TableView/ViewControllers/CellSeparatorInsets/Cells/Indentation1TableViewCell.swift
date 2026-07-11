@@ -9,11 +9,11 @@ import UIKit
 
 class Indentation1TableViewCell: UITableViewCell {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "Indentation1TableViewCell"
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -27,7 +27,7 @@ class Indentation1TableViewCell: UITableViewCell {
 		setup()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setup() {
 		indentationLevel = 1

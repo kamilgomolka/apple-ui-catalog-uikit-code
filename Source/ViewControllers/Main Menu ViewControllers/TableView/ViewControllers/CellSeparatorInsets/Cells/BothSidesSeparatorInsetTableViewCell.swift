@@ -9,11 +9,11 @@ import UIKit
 
 class BothSidesSeparatorInsetTableViewCell: UITableViewCell {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "BothSidesSeparatorInsetTableViewCell"
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -27,7 +27,7 @@ class BothSidesSeparatorInsetTableViewCell: UITableViewCell {
 		setup()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setup() {
 		separatorInset = UIEdgeInsets(top: 0.0, left: 32.0, bottom: 0.0, right: 32.0)

@@ -9,7 +9,7 @@ import UIKit
 
 class ToolbarSystemItemsViewController: UIViewController {
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -19,7 +19,7 @@ class ToolbarSystemItemsViewController: UIViewController {
 		setupToolbars()
 	}
 	
-	// MARK: - Functions
+	// MARK: Functions
 	
 	func setupToolbars() {
 		

@@ -9,7 +9,7 @@ import UIKit
 
 class SegmentedControlViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var standardLabel: UILabel = {
 		let label = UILabel()
@@ -105,7 +105,7 @@ class SegmentedControlViewController: StackViewController {
 		return segmentedControl
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -115,7 +115,7 @@ class SegmentedControlViewController: StackViewController {
 		startObservingSegmentedControlValueChange()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()
@@ -132,7 +132,7 @@ class SegmentedControlViewController: StackViewController {
 		stackView.addArrangedSubview(customColorsSegmentedControl)
 	}
 	
-	// MARK: - Functions
+	// MARK: Functions
 	
 	func startObservingSegmentedControlValueChange() {
 		standardSegmentedControl.addTarget(

@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewSectionHeaderView: UITableViewHeaderFooterView {
 
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "TableViewSectionHeaderView"
 	
@@ -20,7 +20,7 @@ class TableViewSectionHeaderView: UITableViewHeaderFooterView {
 		return label
 	}()
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(reuseIdentifier: String?) {
 		super.init(reuseIdentifier: reuseIdentifier)
@@ -34,7 +34,7 @@ class TableViewSectionHeaderView: UITableViewHeaderFooterView {
 		setup()
 	}
 	
-	// MARK: - Setup
+	// MARK: Setup
 	
 	func setup() {
 		layoutMargins = UIEdgeInsets(top: 16.0, left: 16.0, bottom: 16.0, right: 16.0)

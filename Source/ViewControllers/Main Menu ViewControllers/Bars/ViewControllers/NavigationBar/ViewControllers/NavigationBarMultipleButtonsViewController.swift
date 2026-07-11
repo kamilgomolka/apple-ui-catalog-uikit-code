@@ -9,7 +9,7 @@ import UIKit
 
 class NavigationBarMultipleButtonsViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var itemTypeLabel: UILabel = {
 		let label = UILabel()
@@ -78,7 +78,7 @@ class NavigationBarMultipleButtonsViewController: StackViewController {
 		return switchControl
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -89,7 +89,7 @@ class NavigationBarMultipleButtonsViewController: StackViewController {
 		updateView()
 	}
 	
-	// MARK: - Functions
+	// MARK: Functions
 	
 	func startMonitoringActions() {
 		itemTypeSegmentedControl.addTarget(
@@ -206,7 +206,7 @@ class NavigationBarMultipleButtonsViewController: StackViewController {
 		return view
 	}
 	
-	// MARK: - Actions
+	// MARK: Actions
 	
 	@objc func anyControlValueChanged() {
 		updateView()

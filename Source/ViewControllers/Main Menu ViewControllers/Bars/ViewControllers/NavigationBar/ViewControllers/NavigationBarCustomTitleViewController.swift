@@ -9,7 +9,7 @@ import UIKit
 
 class NavigationBarCustomTitleViewController: BaseNavigationBarViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var segmentedControl: UISegmentedControl = {
 		let segmentedControl = UISegmentedControl(items: [
@@ -20,7 +20,7 @@ class NavigationBarCustomTitleViewController: BaseNavigationBarViewController {
 		return segmentedControl
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()

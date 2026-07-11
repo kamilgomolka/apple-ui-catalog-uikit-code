@@ -9,11 +9,11 @@ import UIKit
 
 class ButtonCornerStyleViewController: StackViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	let clicksCounter = ButtonClicksCounter()
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	override func addSubviews() {
 		super.addSubviews()

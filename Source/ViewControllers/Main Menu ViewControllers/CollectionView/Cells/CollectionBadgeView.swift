@@ -9,7 +9,7 @@ import UIKit
 
 class CollectionBadgeView: UICollectionReusableView {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "CollectionBadgeView"
 	
@@ -33,7 +33,7 @@ class CollectionBadgeView: UICollectionReusableView {
 		}
 	}
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -55,7 +55,7 @@ class CollectionBadgeView: UICollectionReusableView {
 		label.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
 	}
 	
-    // MARK: - Functions
+    // MARK: Functions
     
     func updateRadius() {
         let radius = bounds.width / 2.0

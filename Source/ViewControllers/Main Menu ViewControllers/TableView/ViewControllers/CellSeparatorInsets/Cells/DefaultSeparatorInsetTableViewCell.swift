@@ -9,7 +9,7 @@ import UIKit
 
 class DefaultSeparatorInsetTableViewCell: UITableViewCell {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	static let identifier = "DefaultSeparatorInsetTableViewCell"	
 }

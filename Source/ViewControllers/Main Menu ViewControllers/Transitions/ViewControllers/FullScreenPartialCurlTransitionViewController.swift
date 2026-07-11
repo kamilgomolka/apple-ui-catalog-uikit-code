@@ -18,7 +18,7 @@ import UIKit
 ///
 class FullScreenPartialCurlTransitionViewController: SingleLabelViewController {
 	
-	// MARK: - Init
+	// MARK: Init
 	
 	init() {
 		super.init(labelText: "Modal, Full screen, Partial curl", withCloseButton: true)
@@ -28,7 +28,7 @@ class FullScreenPartialCurlTransitionViewController: SingleLabelViewController {
 		super.init(coder: coder)
 	}
 	
-	// MARK: - Actions
+	// MARK: Actions
     
     @objc override func close() {
         dismiss(animated: false)

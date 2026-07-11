@@ -9,11 +9,11 @@ import UIKit
 
 class MenuCell: UITableViewCell {
     
-    // MARK: - Static properties
+    // MARK: Static properties
     
     static let identifier = "MenuCell"
     
-    // MARK: - Initializers
+    // MARK: Initializers
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

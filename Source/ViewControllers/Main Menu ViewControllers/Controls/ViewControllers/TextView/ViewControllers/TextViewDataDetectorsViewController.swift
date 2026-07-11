@@ -9,7 +9,7 @@ import UIKit
 
 class TextViewDataDetectorsViewController: BaseViewController {
 	
-	// MARK: - Properties
+	// MARK: Properties
 	
 	var textView: UITextView = {
 		let textView = UITextView()
@@ -22,7 +22,7 @@ class TextViewDataDetectorsViewController: BaseViewController {
 		return textView
 	}()
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
@@ -33,7 +33,7 @@ class TextViewDataDetectorsViewController: BaseViewController {
 		createConstraints()
 	}
 	
-	// MARK: - Initialization
+	// MARK: Initialization
 	
 	func addSubviews() {
 		view.addSubview(textView)

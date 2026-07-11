@@ -9,7 +9,7 @@ import UIKit
 
 class NavigationBarCustomBackButtonViewController2: BaseNavigationBarViewController {
 	
-	// MARK: - Lifecycle
+	// MARK: Lifecycle
 	
 	override func loadView() {
 		super.loadView()
