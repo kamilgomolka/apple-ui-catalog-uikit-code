@@ -29,31 +29,29 @@ class MockDataLoader {
 		return strings.joined(separator: "\n")
 	}
 	
-	func persons() -> [Person] {
-		guard let path = Bundle.main.path(forResource: "personData", ofType: "json") else {
+	func persons() async -> [Person] {
+		guard let url = Bundle.main.url(forResource: "personData", withExtension: "json") else {
 			return []
 		}
-		
-		let url = URL(fileURLWithPath: path)
-		
-		guard let data = try? Data(contentsOf: url),
-			  let array = try? JSONDecoder().decode([Person].self, from: data) else {
-				  return []
-			  }
-		
-		return array
+
+		return await Task.detached(priority: .background) {
+			guard let data = try? Data(contentsOf: url),
+				  let array = try? JSONDecoder().decode([Person].self, from: data) else {
+				return []
+			}
+			return array
+		}.value
 	}
 	
 	// MARK: Private functions
 	
 	func text(fileName: String) -> String? {
-		guard let path = Bundle.main.path(forResource: fileName, ofType: "txt") else {
+		guard let url = Bundle.main.url(forResource: fileName, withExtension: "txt") else {
 			return nil
 		}
-		
+
 		do {
-			let contents = try String(contentsOfFile: path)
-			return contents
+			return try String(contentsOf: url)
 		} catch {
 			print("Error while getting mock data. fileName=\(fileName).txt. ", error)
 			return nil

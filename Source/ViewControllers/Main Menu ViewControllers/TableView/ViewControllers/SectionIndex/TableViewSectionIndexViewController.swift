@@ -18,9 +18,12 @@ class TableViewSectionIndexViewController: UIViewController, UITableViewDataSour
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		viewModel.loadData()
+
 		setupTableView()
+		Task {
+			await viewModel.loadData()
+			tableView.reloadData()
+		}
 	}
 	
 	// MARK: Setup

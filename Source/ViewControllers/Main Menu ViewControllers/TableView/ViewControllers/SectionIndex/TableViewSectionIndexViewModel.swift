@@ -18,8 +18,8 @@ class TableViewSectionIndexViewModel {
     
     // MARK: Functions
     
-    func loadData() {
-		persons = MockDataLoader.shared.persons()
+    func loadData() async {
+		persons = await MockDataLoader.shared.persons()
         createSections()
     }
     
