@@ -35,7 +35,7 @@ class BaseViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-		keyboardHelper?.viewWillAppear(animated)
+		keyboardHelper?.viewWillDisappear(animated)
     }
     
     // MARK: Private functions
