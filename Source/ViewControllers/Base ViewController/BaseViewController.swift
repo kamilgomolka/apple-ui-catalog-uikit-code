@@ -11,7 +11,7 @@ class BaseViewController: UIViewController {
     
     // MARK: Properties
     
-    var scrollViewToAdjst: UIScrollView? {
+    var scrollViewToAdjust: UIScrollView? {
         return nil
     }
 	
@@ -41,8 +41,8 @@ class BaseViewController: UIViewController {
     // MARK: Private functions
 	
 	private func createKeyboardHelperIfNeeded() {
-		if let scrollViewToAdjst = scrollViewToAdjst {
-			keyboardHelper = KeyboardHelper(viewController: self, scrollView: scrollViewToAdjst)
+		if let scrollViewToAdjust = scrollViewToAdjust {
+			keyboardHelper = KeyboardHelper(viewController: self, scrollView: scrollViewToAdjust)
 		}
 	}
 }

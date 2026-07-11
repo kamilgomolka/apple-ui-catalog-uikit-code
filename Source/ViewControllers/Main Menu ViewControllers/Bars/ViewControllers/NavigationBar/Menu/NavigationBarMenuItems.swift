@@ -13,7 +13,7 @@ struct NavigationBarMenuItems {
 		return [
 			MenuItem(
 				name: "Small title",
-				viewControllerProvider: { NavigationBarSmallTiltleViewController() }
+				viewControllerProvider: { NavigationBarSmallTitleViewController() }
 			),
 			MenuItem(
 				name: "Large title",
@@ -21,7 +21,7 @@ struct NavigationBarMenuItems {
 			),
 			MenuItem(
 				name: "Grouped, Small title",
-				viewControllerProvider: { NavigationBarGroupedSmallTiltleViewController() }
+				viewControllerProvider: { NavigationBarGroupedSmallTitleViewController() }
 			),
 			MenuItem(
 				name: "Grouped, Large title",

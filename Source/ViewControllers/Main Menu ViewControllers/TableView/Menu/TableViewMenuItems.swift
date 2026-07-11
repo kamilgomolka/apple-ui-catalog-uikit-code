@@ -40,8 +40,8 @@ struct TableViewMenuItems {
 				viewControllerProvider: { CellSeparatorInsetsViewController() }
 			),
 			MenuItem(
-				name: "Headers and Footters",
-				viewControllerProvider: { TableViewHeadersAndFoottersViewController() }
+				name: "Headers and Footers",
+				viewControllerProvider: { TableViewHeadersAndFootersViewController() }
 			),
 			MenuItem(
 				name: "SectionIndex",

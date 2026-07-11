@@ -15,11 +15,11 @@ struct TransitionsMenuItems {
 			modalDefault,
 			fullScreenCoverVertical,
 			fullScreenFlipHorizontal,
-			fullScreenCrossDisolve,
+			fullScreenCrossDissolve,
 			fullScreenPartialCurl,
 			pageSheetCoverVertical,
 			pageSheetFlipHorizontal,
-			pageSheetCrossDisolve,
+			pageSheetCrossDissolve,
 			pageSheetWithDelegate,
 			sheetMedium,
 			sheetMediumAndLarge
@@ -84,7 +84,7 @@ struct TransitionsMenuItems {
 		)
 	}
 	
-	static var fullScreenCrossDisolve: MenuItem {
+	static var fullScreenCrossDissolve: MenuItem {
 		return MenuItem(
 			name: "Modal, Full screen, Cross disolve",
 			clickHandler: { parentViewController in
@@ -143,7 +143,7 @@ struct TransitionsMenuItems {
 		)
 	}
 	
-	static var pageSheetCrossDisolve: MenuItem {
+	static var pageSheetCrossDissolve: MenuItem {
 		return MenuItem(
 			name: "Page sheet, Cross disolve",
 			clickHandler: { parentViewController in

@@ -11,7 +11,7 @@ class StackViewController: BaseViewController {
 	
 	// MARK: Properties
 	
-	override var scrollViewToAdjst: UIScrollView? {
+	override var scrollViewToAdjust: UIScrollView? {
 		return scrollView
 	}
 	

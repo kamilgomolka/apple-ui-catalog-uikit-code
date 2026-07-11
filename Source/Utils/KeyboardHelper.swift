@@ -81,11 +81,11 @@ class KeyboardHelper: NSObject {
 			return
 		}
 		
-		let botttomInset = keyboardVisible
+		let bottomInset = keyboardVisible
 		? keyboardHeight(notification: notification) - viewController.view.safeAreaInsets.bottom
 		: 0.0
 		
-		let inset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: botttomInset, right: 0.0)
+		let inset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: bottomInset, right: 0.0)
 		scrollView.contentInset = inset
 		scrollView.scrollIndicatorInsets = inset
 	}
