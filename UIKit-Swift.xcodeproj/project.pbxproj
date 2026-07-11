@@ -24,13 +24,13 @@
 		260E2DC0280CB7BB00C2CA16 /* CellStyleMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DBF280CB7BB00C2CA16 /* CellStyleMenuItems.swift */; };
 		260E2DCD280D4CC200C2CA16 /* NavigationBarMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DCC280D4CC200C2CA16 /* NavigationBarMenuItems.swift */; };
 		260E2DD2280D4D0700C2CA16 /* NavigationBarLargeTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DD1280D4D0700C2CA16 /* NavigationBarLargeTitleViewController.swift */; };
-		260E2DD4280D4D1F00C2CA16 /* NavigationBarSmallTiltleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DD3280D4D1F00C2CA16 /* NavigationBarSmallTiltleViewController.swift */; };
+		260E2DD4280D4D1F00C2CA16 /* NavigationBarSmallTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DD3280D4D1F00C2CA16 /* NavigationBarSmallTitleViewController.swift */; };
 		260E2DD6280D4D3400C2CA16 /* NavigationBarCustomTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DD5280D4D3400C2CA16 /* NavigationBarCustomTitleViewController.swift */; };
 		260E2DDA280D4E6500C2CA16 /* BaseNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DD9280D4E6500C2CA16 /* BaseNavigationBarViewController.swift */; };
 		260E2DDC280D4E7500C2CA16 /* BaseNavigationBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DDB280D4E7500C2CA16 /* BaseNavigationBarCell.swift */; };
 		260E2DE0280D5C1C00C2CA16 /* BarsMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DDF280D5C1C00C2CA16 /* BarsMenuItems.swift */; };
 		260E2DE4280D629800C2CA16 /* NavigationBarGroupedLargeTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DE3280D629800C2CA16 /* NavigationBarGroupedLargeTitleViewController.swift */; };
-		260E2DE6280D62A600C2CA16 /* NavigationBarGroupedSmallTiltleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DE5280D62A600C2CA16 /* NavigationBarGroupedSmallTiltleViewController.swift */; };
+		260E2DE6280D62A600C2CA16 /* NavigationBarGroupedSmallTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DE5280D62A600C2CA16 /* NavigationBarGroupedSmallTitleViewController.swift */; };
 		260E2DE9280D774500C2CA16 /* NavigationBarButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DE8280D774500C2CA16 /* NavigationBarButtonsViewController.swift */; };
 		260E2DEC280EAE4700C2CA16 /* NavigationBarMultipleButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260E2DEB280EAE4700C2CA16 /* NavigationBarMultipleButtonsViewController.swift */; };
 		2620623227F32AE000FD0CF3 /* ButtonToggleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620622A27F32AE000FD0CF3 /* ButtonToggleViewController.swift */; };
@@ -60,7 +60,7 @@
 		26484F6A2806CBEE00002EE3 /* ScrollViewTwoDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26484F642806CBEE00002EE3 /* ScrollViewTwoDirectionsViewController.swift */; };
 		26484FA928070C5B00002EE3 /* TableViewSectionIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26484F7028070C5B00002EE3 /* TableViewSectionIndexViewController.swift */; };
 		26484FAA28070C5B00002EE3 /* TableViewSectionIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26484F7128070C5B00002EE3 /* TableViewSectionIndexViewModel.swift */; };
-		26484FAB28070C5B00002EE3 /* TableViewHeadersAndFoottersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26484F7328070C5B00002EE3 /* TableViewHeadersAndFoottersViewController.swift */; };
+		26484FAB28070C5B00002EE3 /* TableViewHeadersAndFootersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26484F7328070C5B00002EE3 /* TableViewHeadersAndFootersViewController.swift */; };
 		26484FAD28070C5B00002EE3 /* TableViewSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26484F7628070C5B00002EE3 /* TableViewSectionHeaderView.swift */; };
 		26484FAE28070C5B00002EE3 /* TableViewStyleInsetGroupedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26484F7928070C5B00002EE3 /* TableViewStyleInsetGroupedViewController.swift */; };
 		26484FAF28070C5B00002EE3 /* TableViewStyleGroupedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26484F7A28070C5B00002EE3 /* TableViewStyleGroupedViewController.swift */; };
@@ -173,13 +173,13 @@
 		260E2DBF280CB7BB00C2CA16 /* CellStyleMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellStyleMenuItems.swift; sourceTree = "<group>"; };
 		260E2DCC280D4CC200C2CA16 /* NavigationBarMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarMenuItems.swift; sourceTree = "<group>"; };
 		260E2DD1280D4D0700C2CA16 /* NavigationBarLargeTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarLargeTitleViewController.swift; sourceTree = "<group>"; };
-		260E2DD3280D4D1F00C2CA16 /* NavigationBarSmallTiltleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarSmallTiltleViewController.swift; sourceTree = "<group>"; };
+		260E2DD3280D4D1F00C2CA16 /* NavigationBarSmallTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarSmallTitleViewController.swift; sourceTree = "<group>"; };
 		260E2DD5280D4D3400C2CA16 /* NavigationBarCustomTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarCustomTitleViewController.swift; sourceTree = "<group>"; };
 		260E2DD9280D4E6500C2CA16 /* BaseNavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationBarViewController.swift; sourceTree = "<group>"; };
 		260E2DDB280D4E7500C2CA16 /* BaseNavigationBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationBarCell.swift; sourceTree = "<group>"; };
 		260E2DDF280D5C1C00C2CA16 /* BarsMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsMenuItems.swift; sourceTree = "<group>"; };
 		260E2DE3280D629800C2CA16 /* NavigationBarGroupedLargeTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarGroupedLargeTitleViewController.swift; sourceTree = "<group>"; };
-		260E2DE5280D62A600C2CA16 /* NavigationBarGroupedSmallTiltleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarGroupedSmallTiltleViewController.swift; sourceTree = "<group>"; };
+		260E2DE5280D62A600C2CA16 /* NavigationBarGroupedSmallTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarGroupedSmallTitleViewController.swift; sourceTree = "<group>"; };
 		260E2DE8280D774500C2CA16 /* NavigationBarButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarButtonsViewController.swift; sourceTree = "<group>"; };
 		260E2DEB280EAE4700C2CA16 /* NavigationBarMultipleButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarMultipleButtonsViewController.swift; sourceTree = "<group>"; };
 		2620622A27F32AE000FD0CF3 /* ButtonToggleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonToggleViewController.swift; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 		26484F642806CBEE00002EE3 /* ScrollViewTwoDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewTwoDirectionsViewController.swift; sourceTree = "<group>"; };
 		26484F7028070C5B00002EE3 /* TableViewSectionIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionIndexViewController.swift; sourceTree = "<group>"; };
 		26484F7128070C5B00002EE3 /* TableViewSectionIndexViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionIndexViewModel.swift; sourceTree = "<group>"; };
-		26484F7328070C5B00002EE3 /* TableViewHeadersAndFoottersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHeadersAndFoottersViewController.swift; sourceTree = "<group>"; };
+		26484F7328070C5B00002EE3 /* TableViewHeadersAndFootersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHeadersAndFootersViewController.swift; sourceTree = "<group>"; };
 		26484F7628070C5B00002EE3 /* TableViewSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionHeaderView.swift; sourceTree = "<group>"; };
 		26484F7928070C5B00002EE3 /* TableViewStyleInsetGroupedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewStyleInsetGroupedViewController.swift; sourceTree = "<group>"; };
 		26484F7A28070C5B00002EE3 /* TableViewStyleGroupedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewStyleGroupedViewController.swift; sourceTree = "<group>"; };
@@ -398,11 +398,11 @@
 				264CD4A9280F57E9009FFF29 /* NavigationBarCustomBackButtonViewController2.swift */,
 				260E2DD5280D4D3400C2CA16 /* NavigationBarCustomTitleViewController.swift */,
 				260E2DE3280D629800C2CA16 /* NavigationBarGroupedLargeTitleViewController.swift */,
-				260E2DE5280D62A600C2CA16 /* NavigationBarGroupedSmallTiltleViewController.swift */,
+				260E2DE5280D62A600C2CA16 /* NavigationBarGroupedSmallTitleViewController.swift */,
 				260E2DD1280D4D0700C2CA16 /* NavigationBarLargeTitleViewController.swift */,
 				260E2DEB280EAE4700C2CA16 /* NavigationBarMultipleButtonsViewController.swift */,
 				264CD4A5280F5188009FFF29 /* NavigationBarPromptViewController.swift */,
-				260E2DD3280D4D1F00C2CA16 /* NavigationBarSmallTiltleViewController.swift */,
+				260E2DD3280D4D1F00C2CA16 /* NavigationBarSmallTitleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -580,7 +580,7 @@
 				26484F9E28070C5B00002EE3 /* CellSeparatorInsets */,
 				26484F8728070C5B00002EE3 /* CellStyle */,
 				26ED8F4028095B8900D03738 /* Editing */,
-				26484F7228070C5B00002EE3 /* HeadersAndFootters */,
+				26484F7228070C5B00002EE3 /* HeadersAndFooters */,
 				26484F6F28070C5B00002EE3 /* SectionIndex */,
 				26484F9628070C5B00002EE3 /* Selection */,
 				26484F7F28070C5B00002EE3 /* SeparatorStyle */,
@@ -598,13 +598,13 @@
 			path = SectionIndex;
 			sourceTree = "<group>";
 		};
-		26484F7228070C5B00002EE3 /* HeadersAndFootters */ = {
+		26484F7228070C5B00002EE3 /* HeadersAndFooters */ = {
 			isa = PBXGroup;
 			children = (
 				26484F7428070C5B00002EE3 /* Subviews */,
-				26484F7328070C5B00002EE3 /* TableViewHeadersAndFoottersViewController.swift */,
+				26484F7328070C5B00002EE3 /* TableViewHeadersAndFootersViewController.swift */,
 			);
-			path = HeadersAndFootters;
+			path = HeadersAndFooters;
 			sourceTree = "<group>";
 		};
 		26484F7428070C5B00002EE3 /* Subviews */ = {
@@ -1192,13 +1192,13 @@
 		26F626E9281906AF00F384DD /* Simple Tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				26F626EB281906AF00F384DD /* Childrren */,
+				26F626EB281906AF00F384DD /* Children */,
 				26F626EA281906AF00F384DD /* SimpleTabbarViewController.swift */,
 			);
 			path = "Simple Tabbar";
 			sourceTree = "<group>";
 		};
-		26F626EB281906AF00F384DD /* Childrren */ = {
+		26F626EB281906AF00F384DD /* Children */ = {
 			isa = PBXGroup;
 			children = (
 				26F626EF281906AF00F384DD /* SimpleTabbarChild1.swift */,
@@ -1206,7 +1206,7 @@
 				26F626EE281906AF00F384DD /* SimpleTabbarChild3.swift */,
 				26F626ED281906AF00F384DD /* SimpleTabbarChild4.swift */,
 			);
-			path = Childrren;
+			path = Children;
 			sourceTree = "<group>";
 		};
 		26F626F9281913B100F384DD /* Badge */ = {
@@ -1325,11 +1325,11 @@
 				26ED8F442809675E00D03738 /* TableViewEditingMenuItems.swift in Sources */,
 				26859E682808876900E233BB /* CollectionHeaderView.swift in Sources */,
 				264CD4AA280F57E9009FFF29 /* NavigationBarCustomBackButtonViewController2.swift in Sources */,
-				260E2DD4280D4D1F00C2CA16 /* NavigationBarSmallTiltleViewController.swift in Sources */,
+				260E2DD4280D4D1F00C2CA16 /* NavigationBarSmallTitleViewController.swift in Sources */,
 				260E2DB2280CB48100C2CA16 /* ButtonMenuItems.swift in Sources */,
 				26484FC828070C5B00002EE3 /* CellSeparatorInsetsViewController.swift in Sources */,
 				26859E6C2808876900E233BB /* CollectionViewPagingViewController.swift in Sources */,
-				260E2DE6280D62A600C2CA16 /* NavigationBarGroupedSmallTiltleViewController.swift in Sources */,
+				260E2DE6280D62A600C2CA16 /* NavigationBarGroupedSmallTitleViewController.swift in Sources */,
 				26859E6D2808876900E233BB /* CollectionViewGridViewController.swift in Sources */,
 				260E2DCD280D4CC200C2CA16 /* NavigationBarMenuItems.swift in Sources */,
 				26484FAF28070C5B00002EE3 /* TableViewStyleGroupedViewController.swift in Sources */,
@@ -1425,7 +1425,7 @@
 				26859E692808876900E233BB /* CollectionBadgeView.swift in Sources */,
 				26F626E32819062A00F384DD /* TabbarMenuItems.swift in Sources */,
 				26484F692806CBEE00002EE3 /* ScrollViewVerticalViewController.swift in Sources */,
-				26484FAB28070C5B00002EE3 /* TableViewHeadersAndFoottersViewController.swift in Sources */,
+				26484FAB28070C5B00002EE3 /* TableViewHeadersAndFootersViewController.swift in Sources */,
 				26484FC728070C5B00002EE3 /* CellSeparatorInsetsSection.swift in Sources */,
 				26B7C74828109B19001889A2 /* ToolbarAndTableViewController.swift in Sources */,
 				268AEF61280920CE006E8838 /* SingleLabelViewController.swift in Sources */,
