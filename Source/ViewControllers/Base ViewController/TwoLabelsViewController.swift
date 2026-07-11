@@ -78,7 +78,7 @@ class TwoLabelsViewController: UIViewController {
         subtitleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
     }
     
-    open func setupCloseButton() {
+    func setupCloseButton() {
         guard withCloseButton else {
             return
         }
