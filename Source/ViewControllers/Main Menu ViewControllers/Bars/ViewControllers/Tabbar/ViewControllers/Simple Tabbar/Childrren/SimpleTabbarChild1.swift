@@ -63,7 +63,7 @@ class SimpleTabbarChild1: UIViewController, UITableViewDataSource, UITableViewDe
 		tableView.dataSource = self
 		tableView.delegate = self
 		tableView.translatesAutoresizingMaskIntoConstraints = false
-		tableView.register(BaseNavigationBarCell.self, forCellReuseIdentifier: BaseNavigationBarCell.identifier)
+		tableView.register(SimpleTableViewCell.self, forCellReuseIdentifier: SimpleTableViewCell.identifier)
 		view.addSubview(tableView)
 		
 		tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
@@ -88,7 +88,7 @@ class SimpleTabbarChild1: UIViewController, UITableViewDataSource, UITableViewDe
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: BaseNavigationBarCell.identifier, for: indexPath)
+		let cell = tableView.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier, for: indexPath)
 		
 		cell.textLabel?.text = "Cell number \(indexPath.row)"
 		cell.imageView?.image = UIImage(systemName: "folder.circle.fill")
