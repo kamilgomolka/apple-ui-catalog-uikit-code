@@ -37,8 +37,8 @@ class ButtonClicksCounter {
         for button in buttons {
             button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
             
-            button.configurationUpdateHandler = { [unowned self] button in
-                button.configuration?.title = self.currentTitle(button: button)
+            button.configurationUpdateHandler = { [weak self] button in
+                button.configuration?.title = self?.currentTitle(button: button)
             }
         }
     }
