@@ -27,6 +27,7 @@ class CellStyleBaseViewController: UIViewController, UITableViewDataSource, UITa
 		tableView.dataSource = self
 		tableView.delegate = self
 		tableView.allowsSelection = false
+		tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
 		tableView.translatesAutoresizingMaskIntoConstraints = false
 				
 		for sectionType in CellStyleSection.allCases {

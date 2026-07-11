@@ -40,6 +40,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		tableView.dataSource = self
 		tableView.delegate = self
 		tableView.register(MenuCell.self, forCellReuseIdentifier: MenuCell.identifier)
+		tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
 		tableView.translatesAutoresizingMaskIntoConstraints = false
 		view.addSubview(tableView)
 		

@@ -12,7 +12,9 @@ class TableViewStyleInsetGroupedViewController: SimpleTableViewController {
 	// MARK: Setup
 	
 	override func createTableView() -> UITableView {
-		return UITableView(frame: .zero, style: .insetGrouped)
+		let tableView = UITableView(frame: .zero, style: .insetGrouped)
+		tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
+		return tableView
 	}
     
     // MARK: UITableViewDataSource
