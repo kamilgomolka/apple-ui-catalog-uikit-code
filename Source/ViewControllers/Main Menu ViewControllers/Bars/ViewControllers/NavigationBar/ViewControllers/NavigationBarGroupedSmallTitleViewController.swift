@@ -1,5 +1,5 @@
 //
-//  NavigationBarGroupedSmallTiltleViewController.swift
+//  NavigationBarGroupedSmallTitleViewController.swift
 //  UIKit-Swift
 //
 //  Created by Kamil Gomółka on 18/04/2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NavigationBarGroupedSmallTiltleViewController: BaseNavigationBarViewController {
+class NavigationBarGroupedSmallTitleViewController: BaseNavigationBarViewController {
 	
 	// MARK: Setup
 	
