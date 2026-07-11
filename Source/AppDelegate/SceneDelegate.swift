@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let window = createWindow(scene: scene) else {
+        guard let window = makeWindow(scene: scene) else {
             return
         }
         
@@ -23,18 +23,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     // MARK: Private functions
     
-    private func createWindow(scene: UIScene) -> UIWindow? {
+    private func makeWindow(scene: UIScene) -> UIWindow? {
         guard let windowScene = scene as? UIWindowScene else {
             return nil
         }
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = createRootViewController()
+        window.rootViewController = makeRootViewController()
         window.makeKeyAndVisible()
         return window
     }
     
-    private func createRootViewController() -> UIViewController {
+    private func makeRootViewController() -> UIViewController {
         let viewController = MainMenuViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
         return navigationController
