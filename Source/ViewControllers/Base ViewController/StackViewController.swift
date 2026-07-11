@@ -64,10 +64,11 @@ class StackViewController: BaseViewController {
 		scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
 		scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 		
-		contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-		contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-		contentView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-		contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+		contentView.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor).isActive = true
+		contentView.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor).isActive = true
+		contentView.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor).isActive = true
+		contentView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor).isActive = true
+		contentView.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor).isActive = true
 		
 		stackView.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor).isActive = true
 		stackView.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor).isActive = true
