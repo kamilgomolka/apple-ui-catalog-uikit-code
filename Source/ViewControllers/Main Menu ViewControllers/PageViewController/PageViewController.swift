@@ -52,7 +52,7 @@ class PageViewController: UIViewController {
 		
 		let closeButton = UIBarButtonItem(systemItem: .close)
 		closeButton.primaryAction = UIAction(handler: { [weak self] _ in
-			self?.navigationController?.dismiss(animated: true)
+			self?.navigationController?.popViewController(animated: true)
 		})
 		navigationItem.rightBarButtonItem = closeButton
 	}
