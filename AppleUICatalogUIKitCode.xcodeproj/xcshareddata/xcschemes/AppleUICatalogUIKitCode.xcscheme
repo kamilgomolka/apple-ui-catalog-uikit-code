@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "26B430E227E1154800F00210"
-               BuildableName = "AppleUICatalogUIKitCode.app"
+               BuildableName = "UIKit Code.app"
                BlueprintName = "AppleUICatalogUIKitCode"
                ReferencedContainer = "container:AppleUICatalogUIKitCode.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "26B430E227E1154800F00210"
-            BuildableName = "AppleUICatalogUIKitCode.app"
+            BuildableName = "UIKit Code.app"
             BlueprintName = "AppleUICatalogUIKitCode"
             ReferencedContainer = "container:AppleUICatalogUIKitCode.xcodeproj">
          </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "26B430E227E1154800F00210"
-            BuildableName = "AppleUICatalogUIKitCode.app"
+            BuildableName = "UIKit Code.app"
             BlueprintName = "AppleUICatalogUIKitCode"
             ReferencedContainer = "container:AppleUICatalogUIKitCode.xcodeproj">
          </BuildableReference>
