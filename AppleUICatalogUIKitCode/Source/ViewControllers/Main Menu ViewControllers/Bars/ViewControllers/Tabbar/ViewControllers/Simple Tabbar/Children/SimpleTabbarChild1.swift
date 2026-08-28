@@ -41,7 +41,7 @@ class SimpleTabbarChild1: UIViewController, UITableViewDataSource, UITableViewDe
         setupTableView()
     }
 
-    deinit {
+    isolated deinit {
         print("SimpleTabbarChild1 - deinit")
     }
 

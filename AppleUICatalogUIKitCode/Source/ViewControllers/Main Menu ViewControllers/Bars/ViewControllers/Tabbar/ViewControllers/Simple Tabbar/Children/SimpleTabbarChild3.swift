@@ -37,7 +37,7 @@ class SimpleTabbarChild3: SingleLabelViewController {
         print("SimpleTabbarChild3 - viewDidLoad")
     }
 
-    deinit {
+    isolated deinit {
         print("SimpleTabbarChild3 - deinit")
     }
 
