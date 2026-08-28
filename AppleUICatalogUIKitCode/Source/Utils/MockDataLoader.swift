@@ -52,7 +52,7 @@ class MockDataLoader {
         }
 
         do {
-            return try String(contentsOf: url)
+            return try String(contentsOf: url, encoding: .utf8)
         } catch {
             print("Error while getting mock data. fileName=\(fileName).txt. ", error)
             return nil

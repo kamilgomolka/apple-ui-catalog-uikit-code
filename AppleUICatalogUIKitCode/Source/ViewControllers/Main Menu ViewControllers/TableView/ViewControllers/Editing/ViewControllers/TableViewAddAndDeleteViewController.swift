@@ -44,7 +44,8 @@ class TableViewAddAndDeleteViewController: UIViewController, UITableViewDataSour
     func updateNavigationBar() {
         if tableView.isEditing {
             navigationItem.hidesBackButton = true
-            let editButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(endEdition))
+            let editButton = UIBarButtonItem(
+                title: "Done", style: .prominent, target: self, action: #selector(endEdition))
             navigationItem.rightBarButtonItem = editButton
         } else {
             navigationItem.hidesBackButton = false

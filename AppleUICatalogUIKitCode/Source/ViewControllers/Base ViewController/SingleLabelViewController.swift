@@ -69,7 +69,7 @@ class SingleLabelViewController: UIViewController {
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Close",
-            style: .done,
+            style: .prominent,
             target: self,
             action: #selector(close)
         )

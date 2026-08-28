@@ -34,7 +34,7 @@ class PageSheetWithDelegateTransitionViewController: TwoLabelsViewController {
     override func setupCloseButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Save",
-            style: .done,
+            style: .prominent,
             target: self,
             action: #selector(saveAndClose)
         )

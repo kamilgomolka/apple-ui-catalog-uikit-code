@@ -45,7 +45,7 @@ class ToolbarItemStyleViewController: UIViewController {
 
         let doneItem = UIBarButtonItem(
             title: "Done",
-            style: .done,
+            style: .prominent,
             target: nil,
             action: nil
         )

@@ -59,7 +59,6 @@ class ButtonClicksCounter {
             return title
         }
 
-        let newTitle = String(format: "%@ (%ld)", title, clicks)
-        return newTitle
+        return "\(title) (\(clicks))"
     }
 }
