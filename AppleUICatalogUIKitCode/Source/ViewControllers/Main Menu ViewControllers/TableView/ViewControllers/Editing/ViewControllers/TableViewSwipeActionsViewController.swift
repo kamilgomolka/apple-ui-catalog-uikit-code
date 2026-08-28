@@ -1,6 +1,6 @@
 //
 //  TableViewSwipeActionsViewController.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 15/04/2022.
 //

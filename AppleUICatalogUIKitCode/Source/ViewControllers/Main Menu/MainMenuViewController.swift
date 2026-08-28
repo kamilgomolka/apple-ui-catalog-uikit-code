@@ -1,6 +1,6 @@
 //
 //  MainMenuViewController.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 15/03/2022.
 //
@@ -24,7 +24,7 @@ class MainMenuViewController: MenuViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "UIKit-Swift"
+        title = "UIKit Code"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .never
     }

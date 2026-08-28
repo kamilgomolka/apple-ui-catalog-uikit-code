@@ -1,6 +1,6 @@
 //
 //  TableViewStylePlainViewController.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 13/04/2022.
 //

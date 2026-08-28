@@ -1,6 +1,6 @@
 //
 //  TextViewNonEditableNonSelectableViewController.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 10/04/2022.
 //

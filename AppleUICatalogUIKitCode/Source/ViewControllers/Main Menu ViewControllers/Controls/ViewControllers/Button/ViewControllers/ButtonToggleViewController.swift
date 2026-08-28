@@ -1,6 +1,6 @@
 //
 //  ButtonToggleViewController.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 29/03/2022.
 //

@@ -1,6 +1,6 @@
 //
 //  LabelTextStylesViewController.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 27/03/2022.
 //

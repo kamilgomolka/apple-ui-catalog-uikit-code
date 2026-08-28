@@ -1,6 +1,6 @@
 //
 //  ButtonClicksCounter.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 25/03/2022.
 //

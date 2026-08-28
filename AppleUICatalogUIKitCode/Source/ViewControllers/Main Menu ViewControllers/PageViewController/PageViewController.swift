@@ -1,6 +1,6 @@
 //
 //  PageViewController.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 30/04/2022.
 //

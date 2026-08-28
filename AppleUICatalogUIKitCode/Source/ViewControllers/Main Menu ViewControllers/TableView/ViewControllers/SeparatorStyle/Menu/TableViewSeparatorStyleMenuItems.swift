@@ -1,6 +1,6 @@
 //
 //  TableViewSeparatorStyleMenuItems.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 17/04/2022.
 //

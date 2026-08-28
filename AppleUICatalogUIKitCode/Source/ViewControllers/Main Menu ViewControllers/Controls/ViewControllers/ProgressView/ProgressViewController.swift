@@ -1,6 +1,6 @@
 //
 //  ProgressViewController.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 29/04/2022.
 //

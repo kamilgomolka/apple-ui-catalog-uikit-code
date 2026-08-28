@@ -1,6 +1,6 @@
 //
 //  SimpleTabbarChild4.swift
-//  UIKit-Swift
+//  AppleUICatalogUIKitCode
 //
 //  Created by Kamil Gomółka on 27/04/2022.
 //
