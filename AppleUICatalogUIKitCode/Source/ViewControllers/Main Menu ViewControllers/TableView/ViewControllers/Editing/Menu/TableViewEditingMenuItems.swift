@@ -5,7 +5,7 @@
 //  Created by Kamil Gomółka on 17/04/2022.
 //
 
-import Foundation
+import UIKit
 
 struct TableViewEditingMenuItems {
 

@@ -5,7 +5,7 @@
 //  Created by Kamil Gomółka on 30/04/2022.
 //
 
-import Foundation
+import UIKit
 
 struct ControlsMenuItems {
 
