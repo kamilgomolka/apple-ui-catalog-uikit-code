@@ -8,12 +8,12 @@
 import UIKit
 
 class TwoLabelsViewController: UIViewController {
-    
+
     // MARK: Properties
-    
+
     let withCloseButton: Bool
     let backgroundColor: UIColor
-    
+
     var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.preferredFont(forTextStyle: .title1)
@@ -22,7 +22,7 @@ class TwoLabelsViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     var subtitleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.preferredFont(forTextStyle: .body)
@@ -32,57 +32,59 @@ class TwoLabelsViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
     // MARK: Init
-    
-    init(title: String,
-         subtitle: String,
-         withCloseButton: Bool = false,
-         backgroundColor: UIColor = .systemBackground) {
+
+    init(
+        title: String,
+        subtitle: String,
+        withCloseButton: Bool = false,
+        backgroundColor: UIColor = .systemBackground
+    ) {
         self.withCloseButton = withCloseButton
         self.backgroundColor = backgroundColor
-        
+
         super.init(nibName: nil, bundle: nil)
-        
+
         titleLabel.text = title
         subtitleLabel.text = subtitle
     }
-    
+
     required init?(coder: NSCoder) {
         withCloseButton = false
         backgroundColor = .systemBackground
-        
+
         super.init(coder: coder)
     }
-    
+
     // MARK: Lifecycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         view.backgroundColor = backgroundColor
         setupLabels()
         setupCloseButton()
     }
-    
+
     func setupLabels() {
         view.addSubview(titleLabel)
         view.addSubview(subtitleLabel)
-        
+
         titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
         titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
+
         subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8.0).isActive = true
         subtitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
         subtitleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
     }
-    
+
     func setupCloseButton() {
         guard withCloseButton else {
             return
         }
-        
+
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Close",
             style: .done,
@@ -90,9 +92,9 @@ class TwoLabelsViewController: UIViewController {
             action: #selector(close)
         )
     }
-    
+
     // MARK: Actions
-    
+
     @objc func close() {
         dismiss(animated: true)
     }

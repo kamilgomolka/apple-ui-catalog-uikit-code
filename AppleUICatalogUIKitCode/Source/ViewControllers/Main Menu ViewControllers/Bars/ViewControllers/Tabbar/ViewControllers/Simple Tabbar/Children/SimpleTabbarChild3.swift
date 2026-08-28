@@ -8,55 +8,55 @@
 import UIKit
 
 class SimpleTabbarChild3: SingleLabelViewController {
-	
-	// MARK: Init
-	
-	init() {
-		super.init(labelText: "Child3")
-		
-		print("SimpleTabbarChild3 - init")
-		
-		setupTabbarItem()
-	}
-	
-	required init?(coder: NSCoder) {
-		super.init(coder: coder)
-		
-		print("SimpleTabbarChild3 - init(coder:)")
-		
-		setupTabbarItem()
-	}
-	
-	// MARK: Lifecycle
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		view.backgroundColor = .systemOrange
-		
-		print("SimpleTabbarChild3 - viewDidLoad")
-	}
-	
-	deinit {
-		print("SimpleTabbarChild3 - deinit")
-	}
-	
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-		
-		print("SimpleTabbarChild3 - viewWillAppear")
-	}
-	
-	override func viewWillDisappear(_ animated: Bool) {
-		super.viewWillDisappear(animated)
-		
-		print("SimpleTabbarChild3 - viewWillDisappear")
-	}
-	
-	// MARK: Setup
-	
-	func setupTabbarItem() {
-		tabBarItem.title = "Child3"
-		tabBarItem.image = UIImage(systemName: "folder.fill")
-	}
+
+    // MARK: Init
+
+    init() {
+        super.init(labelText: "Child3")
+
+        print("SimpleTabbarChild3 - init")
+
+        setupTabbarItem()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+
+        print("SimpleTabbarChild3 - init(coder:)")
+
+        setupTabbarItem()
+    }
+
+    // MARK: Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        view.backgroundColor = .systemOrange
+
+        print("SimpleTabbarChild3 - viewDidLoad")
+    }
+
+    deinit {
+        print("SimpleTabbarChild3 - deinit")
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        print("SimpleTabbarChild3 - viewWillAppear")
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        print("SimpleTabbarChild3 - viewWillDisappear")
+    }
+
+    // MARK: Setup
+
+    func setupTabbarItem() {
+        tabBarItem.title = "Child3"
+        tabBarItem.image = UIImage(systemName: "folder.fill")
+    }
 }

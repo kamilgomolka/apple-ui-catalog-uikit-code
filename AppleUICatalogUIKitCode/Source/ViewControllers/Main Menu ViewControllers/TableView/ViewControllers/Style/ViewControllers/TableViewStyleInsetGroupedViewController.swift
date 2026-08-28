@@ -8,30 +8,30 @@
 import UIKit
 
 class TableViewStyleInsetGroupedViewController: SimpleTableViewController {
-    
-	// MARK: Setup
-	
-	override func createTableView() -> UITableView {
-		let tableView = UITableView(frame: .zero, style: .insetGrouped)
-		tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
-		return tableView
-	}
-    
+
+    // MARK: Setup
+
+    override func createTableView() -> UITableView {
+        let tableView = UITableView(frame: .zero, style: .insetGrouped)
+        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
+        return tableView
+    }
+
     // MARK: UITableViewDataSource
-    
+
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        3
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        3
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier, for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier, for: indexPath)
+
         cell.textLabel?.text = "IndexPath [\(indexPath.section), \(indexPath.row)]"
-        
+
         return cell
     }
 }

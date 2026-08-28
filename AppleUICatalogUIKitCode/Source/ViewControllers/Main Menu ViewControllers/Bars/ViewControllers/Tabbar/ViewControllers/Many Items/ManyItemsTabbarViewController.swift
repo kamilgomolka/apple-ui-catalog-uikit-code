@@ -8,34 +8,34 @@
 import UIKit
 
 class ManyItemsTabbarViewController: UITabBarController {
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		createViewControllers()
-		
-		///
-		/// To hide `Edit` button in the More Menu,
-		/// set this property to nil:
-		///
-//		customizableViewControllers = nil
-	}
-	
-	func createViewControllers() {
-		viewControllers = (0...10).map {
-			createViewController(index: $0)
-		}
-	}
-	
-	func createViewController(index: Int) -> UIViewController {
-		let viewController = SingleLabelViewController(labelText: "Item \(index)")
-		
-		viewController.tabBarItem = UITabBarItem(
-			title: "Item \(index)",
-			image: UIImage(systemName: "star.fill"),
-			tag: index
-		)
-		
-		return viewController
-	}
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        createViewControllers()
+
+        ///
+        /// To hide `Edit` button in the More Menu,
+        /// set this property to nil:
+        ///
+        //		customizableViewControllers = nil
+    }
+
+    func createViewControllers() {
+        viewControllers = (0...10).map {
+            createViewController(index: $0)
+        }
+    }
+
+    func createViewController(index: Int) -> UIViewController {
+        let viewController = SingleLabelViewController(labelText: "Item \(index)")
+
+        viewController.tabBarItem = UITabBarItem(
+            title: "Item \(index)",
+            image: UIImage(systemName: "star.fill"),
+            tag: index
+        )
+
+        return viewController
+    }
 }

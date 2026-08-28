@@ -8,19 +8,19 @@
 import UIKit
 
 class NavigationBarLargeTitleViewController: BaseNavigationBarViewController {
-	
-	// MARK: Lifecycle
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		///
-		/// To have large title working, additional property should be set in root ViewController
-		/// (in this project, it's done in MainMenuViewController):
-		///
-		/// navigationController?.navigationBar.prefersLargeTitles = true
-		///
-		
-		navigationItem.largeTitleDisplayMode = .always
-	}
+
+    // MARK: Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        ///
+        /// To have large title working, additional property should be set in root ViewController
+        /// (in this project, it's done in MainMenuViewController):
+        ///
+        /// navigationController?.navigationBar.prefersLargeTitles = true
+        ///
+
+        navigationItem.largeTitleDisplayMode = .always
+    }
 }

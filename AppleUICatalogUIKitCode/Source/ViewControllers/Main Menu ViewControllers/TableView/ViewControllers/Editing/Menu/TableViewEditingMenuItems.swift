@@ -8,21 +8,21 @@
 import Foundation
 
 struct TableViewEditingMenuItems {
-	
-	static var all: [MenuItem] {
-		return [
-			MenuItem(
-				name: "Add and delete",
-				viewControllerProvider: { TableViewAddAndDeleteViewController() }
-			),
-			MenuItem(
-				name: "Reorder",
-				viewControllerProvider: { TableViewReorderViewController() }
-			),
-			MenuItem(
-				name: "Swipe actions",
-				viewControllerProvider: { TableViewSwipeActionsViewController() }
-			)
-		]
-	}
+
+    static var all: [MenuItem] {
+        [
+            MenuItem(
+                name: "Add and delete",
+                viewControllerProvider: { TableViewAddAndDeleteViewController() }
+            ),
+            MenuItem(
+                name: "Reorder",
+                viewControllerProvider: { TableViewReorderViewController() }
+            ),
+            MenuItem(
+                name: "Swipe actions",
+                viewControllerProvider: { TableViewSwipeActionsViewController() }
+            ),
+        ]
+    }
 }

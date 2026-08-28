@@ -8,18 +8,18 @@
 import UIKit
 
 class TableViewSelectionMultipleViewController: SimpleTableViewController {
-	
-	// MARK: Setup
-	
-	override func setupTableView() {
-		super.setupTableView()
-		
-		tableView?.allowsMultipleSelection = true
-	}
-	
-	// MARK: UITableViewDelegate
-    
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+
+    // MARK: Setup
+
+    override func setupTableView() {
+        super.setupTableView()
+
+        tableView?.allowsMultipleSelection = true
+    }
+
+    // MARK: UITableViewDelegate
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
     }
 }

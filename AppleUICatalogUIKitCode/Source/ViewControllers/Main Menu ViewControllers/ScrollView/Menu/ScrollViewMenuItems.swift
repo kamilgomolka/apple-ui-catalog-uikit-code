@@ -8,25 +8,25 @@
 import Foundation
 
 struct ScrollViewMenuItems {
-	
-	static var all: [MenuItem] {
-		return [
-			MenuItem(
-				name: "Vertical",
-				viewControllerProvider: { ScrollViewVerticalViewController() }
-			),
-			MenuItem(
-				name: "Horizontal",
-				viewControllerProvider: { ScrollViewHorizontalViewController() }
-			),
-			MenuItem(
-				name: "Two directions",
-				viewControllerProvider: { ScrollViewTwoDirectionsViewController() }
-			),
+
+    static var all: [MenuItem] {
+        [
+            MenuItem(
+                name: "Vertical",
+                viewControllerProvider: { ScrollViewVerticalViewController() }
+            ),
+            MenuItem(
+                name: "Horizontal",
+                viewControllerProvider: { ScrollViewHorizontalViewController() }
+            ),
+            MenuItem(
+                name: "Two directions",
+                viewControllerProvider: { ScrollViewTwoDirectionsViewController() }
+            ),
             MenuItem(
                 name: "Paging enabled",
                 viewControllerProvider: { ScrollViewWithPagingViewController() }
-            )
-		]
-	}
+            ),
+        ]
+    }
 }

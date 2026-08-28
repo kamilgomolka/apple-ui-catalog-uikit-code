@@ -8,32 +8,32 @@
 import UIKit
 
 class NavigationBarButtonsViewController: BaseNavigationBarViewController {
-	
-	// MARK: Lifecycle
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		navigationItem.leftItemsSupplementBackButton = true
-		
-		navigationItem.leftBarButtonItem = UIBarButtonItem(
-			barButtonSystemItem: .cancel,
-			target: self,
-			action: #selector(cancelButtonClicked)
-		)
-		
-		navigationItem.rightBarButtonItem = UIBarButtonItem(
-			barButtonSystemItem: .done,
-			target: self,
-			action: #selector(doneButtonClicked)
-		)
-	}
-	
-	@objc func cancelButtonClicked() {
-		print("Cancel button clicked")
-	}
-	
-	@objc func doneButtonClicked() {
-		print("Done button clicked")
-	}
+
+    // MARK: Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        navigationItem.leftItemsSupplementBackButton = true
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .cancel,
+            target: self,
+            action: #selector(cancelButtonClicked)
+        )
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .done,
+            target: self,
+            action: #selector(doneButtonClicked)
+        )
+    }
+
+    @objc func cancelButtonClicked() {
+        print("Cancel button clicked")
+    }
+
+    @objc func doneButtonClicked() {
+        print("Done button clicked")
+    }
 }

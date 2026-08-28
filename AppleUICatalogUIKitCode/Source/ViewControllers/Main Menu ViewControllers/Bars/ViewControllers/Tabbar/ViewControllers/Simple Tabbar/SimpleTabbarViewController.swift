@@ -8,19 +8,19 @@
 import UIKit
 
 class SimpleTabbarViewController: UITabBarController {
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		createViewControllers()
-	}
-	
-	func createViewControllers() {
-		viewControllers = [
-			SimpleTabbarChild1(),
-			SimpleTabbarChild2(),
-			SimpleTabbarChild3(),
-			SimpleTabbarChild4()
-		]
-	}
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        createViewControllers()
+    }
+
+    func createViewControllers() {
+        viewControllers = [
+            SimpleTabbarChild1(),
+            SimpleTabbarChild2(),
+            SimpleTabbarChild3(),
+            SimpleTabbarChild4(),
+        ]
+    }
 }

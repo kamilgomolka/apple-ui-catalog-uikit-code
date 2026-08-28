@@ -8,21 +8,21 @@
 import Foundation
 
 struct LabelMenuItems {
-	
-	static var all: [MenuItem] {
-		return [
-			MenuItem(
-				name: "System text styles",
-				viewControllerProvider: { LabelTextStylesViewController() }
-			),
-			MenuItem(
-				name: "Font sizes in pt",
-				viewControllerProvider: { LabelFontSizesViewController() }
-			),
-			MenuItem(
-				name: "Font weights",
-				viewControllerProvider: { LabelFontWeightsViewController() }
-			)
-		]
-	}
+
+    static var all: [MenuItem] {
+        [
+            MenuItem(
+                name: "System text styles",
+                viewControllerProvider: { LabelTextStylesViewController() }
+            ),
+            MenuItem(
+                name: "Font sizes in pt",
+                viewControllerProvider: { LabelFontSizesViewController() }
+            ),
+            MenuItem(
+                name: "Font weights",
+                viewControllerProvider: { LabelFontWeightsViewController() }
+            ),
+        ]
+    }
 }

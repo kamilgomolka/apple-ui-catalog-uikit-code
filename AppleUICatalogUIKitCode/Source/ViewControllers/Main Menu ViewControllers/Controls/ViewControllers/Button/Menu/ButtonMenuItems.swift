@@ -8,33 +8,33 @@
 import Foundation
 
 struct ButtonMenuItems {
-	
-	static var all: [MenuItem] {
-		return [
-			MenuItem(
-				name: "Button styles",
-				viewControllerProvider: { ButtonStylesViewController() }
-			),
-			MenuItem(
-				name: "System sizes",
-				viewControllerProvider: { ButtonSystemSizesViewController() }
-			),
-			MenuItem(
-				name: "Corner style",
-				viewControllerProvider: { ButtonCornerStyleViewController() }
-			),
-			MenuItem(
-				name: "Image placement",
-				viewControllerProvider: { ButtonImagePlacementViewController() }
-			),
-			MenuItem(
-				name: "Toggle button",
-				viewControllerProvider: { ButtonToggleViewController() }
-			),
-			MenuItem(
-				name: "Other",
-				viewControllerProvider: { OtherButtonsViewController() }
-			)
-		]
-	}
+
+    static var all: [MenuItem] {
+        [
+            MenuItem(
+                name: "Button styles",
+                viewControllerProvider: { ButtonStylesViewController() }
+            ),
+            MenuItem(
+                name: "System sizes",
+                viewControllerProvider: { ButtonSystemSizesViewController() }
+            ),
+            MenuItem(
+                name: "Corner style",
+                viewControllerProvider: { ButtonCornerStyleViewController() }
+            ),
+            MenuItem(
+                name: "Image placement",
+                viewControllerProvider: { ButtonImagePlacementViewController() }
+            ),
+            MenuItem(
+                name: "Toggle button",
+                viewControllerProvider: { ButtonToggleViewController() }
+            ),
+            MenuItem(
+                name: "Other",
+                viewControllerProvider: { OtherButtonsViewController() }
+            ),
+        ]
+    }
 }

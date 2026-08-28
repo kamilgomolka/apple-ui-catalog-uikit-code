@@ -11,15 +11,15 @@ enum CellSelectionStyleItem: String, CaseIterable {
     case blue
     case gray
     case `default`
-	
-	var uiKitStyle: UITableViewCell.SelectionStyle {
-		switch self {
-		case .blue:
-			return UITableViewCell.SelectionStyle.blue
-		case .gray:
-			return UITableViewCell.SelectionStyle.gray
-		case .default:
-			return UITableViewCell.SelectionStyle.default
-		}
-	}
+
+    var uiKitStyle: UITableViewCell.SelectionStyle {
+        switch self {
+        case .blue:
+            return UITableViewCell.SelectionStyle.blue
+        case .gray:
+            return UITableViewCell.SelectionStyle.gray
+        case .default:
+            return UITableViewCell.SelectionStyle.default
+        }
+    }
 }

@@ -8,12 +8,12 @@
 import UIKit
 
 class TableViewSeparatorStyleLineViewController: SimpleTableViewController {
-    
-	// MARK: Setup
-	
-	override func setupTableView() {
-		super.setupTableView()
-		
-		tableView?.separatorStyle = .singleLine
-	}
+
+    // MARK: Setup
+
+    override func setupTableView() {
+        super.setupTableView()
+
+        tableView?.separatorStyle = .singleLine
+    }
 }

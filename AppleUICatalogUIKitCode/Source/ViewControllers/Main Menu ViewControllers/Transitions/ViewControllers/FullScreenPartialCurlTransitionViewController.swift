@@ -17,19 +17,19 @@ import UIKit
 ///    (trantision stops in half and app is not responsive).
 ///
 class FullScreenPartialCurlTransitionViewController: SingleLabelViewController {
-	
-	// MARK: Init
-	
-	init() {
-		super.init(labelText: "Modal, Full screen, Partial curl", withCloseButton: true)
-	}
-	
-	required init?(coder: NSCoder) {
-		super.init(coder: coder)
-	}
-	
-	// MARK: Actions
-    
+
+    // MARK: Init
+
+    init() {
+        super.init(labelText: "Modal, Full screen, Partial curl", withCloseButton: true)
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
+    // MARK: Actions
+
     @objc override func close() {
         dismiss(animated: false)
     }

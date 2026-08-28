@@ -8,25 +8,25 @@
 import Foundation
 
 struct CollectionViewMenuItems {
-	
-	static var all: [MenuItem] {
-		return [
-			MenuItem(
-				name: "Basic grid",
-				viewControllerProvider: { CollectionViewGridViewController() }
-			),
-			MenuItem(
-				name: "Sections with headers",
-				viewControllerProvider: { CollectionViewSectionsViewController() }
-			),
-			MenuItem(
-				name: "Badge icon",
-				viewControllerProvider: { CollectionViewBadgeViewController() }
-			),
-			MenuItem(
-				name: "Paging (Orthogonal scrolling)",
-				viewControllerProvider: { CollectionViewPagingViewController() }
-			)
-		]
-	}
+
+    static var all: [MenuItem] {
+        [
+            MenuItem(
+                name: "Basic grid",
+                viewControllerProvider: { CollectionViewGridViewController() }
+            ),
+            MenuItem(
+                name: "Sections with headers",
+                viewControllerProvider: { CollectionViewSectionsViewController() }
+            ),
+            MenuItem(
+                name: "Badge icon",
+                viewControllerProvider: { CollectionViewBadgeViewController() }
+            ),
+            MenuItem(
+                name: "Paging (Orthogonal scrolling)",
+                viewControllerProvider: { CollectionViewPagingViewController() }
+            ),
+        ]
+    }
 }

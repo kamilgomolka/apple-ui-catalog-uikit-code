@@ -8,7 +8,6 @@
 import UIKit
 
 class BaseNavigationBarCell: UITableViewCell {
-	
-	static let identifier = "BaseNavigationBarCell"
-}
 
+    static let identifier = "BaseNavigationBarCell"
+}

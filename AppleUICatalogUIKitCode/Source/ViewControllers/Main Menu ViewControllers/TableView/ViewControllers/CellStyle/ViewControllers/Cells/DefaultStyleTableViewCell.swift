@@ -8,18 +8,18 @@
 import UIKit
 
 class DefaultStyleTableViewCell: UITableViewCell {
-	
-	// MARK: Properties
-	
-	static let identifier = "DefaultStyleTableViewCell"
-	
-	// MARK: Init
-	
-	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-		super.init(style: .default, reuseIdentifier: reuseIdentifier)
-	}
-	
-	required init?(coder: NSCoder) {
-		super.init(coder: coder)
-	}
+
+    // MARK: Properties
+
+    static let identifier = "DefaultStyleTableViewCell"
+
+    // MARK: Init
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: .default, reuseIdentifier: reuseIdentifier)
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 }

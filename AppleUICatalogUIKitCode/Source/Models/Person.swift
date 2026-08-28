@@ -13,25 +13,25 @@ struct Person: Decodable {
     let lastName: String?
     let fullName: String?
     let fullNameLowercased: String?
-    
+
     enum CodingKeys: String, CodingKey {
         case id
         case firstName
         case lastName
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
+
         id = try container.decode(Int.self, forKey: .id)
         firstName = try container.decodeIfPresent(String.self, forKey: .firstName)
         lastName = try container.decodeIfPresent(String.self, forKey: .lastName)
-        fullName = Person.fullNameValue(firstName: firstName, lastName: lastName)        
+        fullName = Person.fullNameValue(firstName: firstName, lastName: lastName)
         fullNameLowercased = fullName?.lowercased()
     }
-    
+
     private static func fullNameValue(firstName: String?, lastName: String?) -> String? {
-        return [lastName, firstName]
+        [lastName, firstName]
             .compactMap { $0 }
             .filter { !$0.isEmpty }
             .joined(separator: " ")

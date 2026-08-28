@@ -8,6 +8,6 @@
 import UIKit
 
 class BaseToolbarCell: UITableViewCell {
-	
-	static let identifier = "BaseToolbarCell"
+
+    static let identifier = "BaseToolbarCell"
 }

@@ -8,21 +8,21 @@
 import Foundation
 
 struct TableViewStyleMenuItems {
-	
-	static var all: [MenuItem] {
-		return [
-			MenuItem(
-				name: "Plain",
-				viewControllerProvider: { TableViewStylePlainViewController() }
-			),
-			MenuItem(
-				name: "Grouped",
-				viewControllerProvider: { TableViewStyleGroupedViewController() }
-			),
-			MenuItem(
-				name: "InsetGrouped",
-				viewControllerProvider: { TableViewStyleInsetGroupedViewController() }
-			)
-		]
-	}
+
+    static var all: [MenuItem] {
+        [
+            MenuItem(
+                name: "Plain",
+                viewControllerProvider: { TableViewStylePlainViewController() }
+            ),
+            MenuItem(
+                name: "Grouped",
+                viewControllerProvider: { TableViewStyleGroupedViewController() }
+            ),
+            MenuItem(
+                name: "InsetGrouped",
+                viewControllerProvider: { TableViewStyleInsetGroupedViewController() }
+            ),
+        ]
+    }
 }

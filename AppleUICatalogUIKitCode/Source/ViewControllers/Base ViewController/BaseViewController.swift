@@ -8,41 +8,41 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    
+
     // MARK: Properties
-    
+
     var scrollViewToAdjust: UIScrollView? {
-        return nil
+        nil
     }
-	
-	var keyboardHelper: KeyboardHelper? = nil
-    
+
+    var keyboardHelper: KeyboardHelper? = nil
+
     // MARK: Lifecycle
-    
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		createKeyboardHelperIfNeeded()
-		keyboardHelper?.viewDidLoad()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        createKeyboardHelperIfNeeded()
+        keyboardHelper?.viewDidLoad()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-		keyboardHelper?.viewWillAppear(animated)
+
+        keyboardHelper?.viewWillAppear(animated)
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-		keyboardHelper?.viewWillDisappear(animated)
+
+        keyboardHelper?.viewWillDisappear(animated)
     }
-    
+
     // MARK: Private functions
-	
-	private func createKeyboardHelperIfNeeded() {
-		if let scrollViewToAdjust = scrollViewToAdjust {
-			keyboardHelper = KeyboardHelper(viewController: self, scrollView: scrollViewToAdjust)
-		}
-	}
+
+    private func createKeyboardHelperIfNeeded() {
+        if let scrollViewToAdjust = scrollViewToAdjust {
+            keyboardHelper = KeyboardHelper(viewController: self, scrollView: scrollViewToAdjust)
+        }
+    }
 }

@@ -8,40 +8,40 @@
 import UIKit
 
 class TextViewNonEditableViewController: BaseViewController {
-	
-	// MARK: Properties
-	
-	var textView: UITextView = {
-		let textView = UITextView()
-		textView.keyboardDismissMode = .interactive
-		textView.isEditable = false
-		textView.font = UIFont.preferredFont(forTextStyle: .body)
-		textView.text = MockDataLoader.shared.longText()
-		textView.translatesAutoresizingMaskIntoConstraints = false
-		return textView
-	}()
-	
-	// MARK: Lifecycle
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		view.backgroundColor = .systemBackground
-		
-		addSubviews()
-		createConstraints()
-	}
-	
-	// MARK: Initialization
-	
-	func addSubviews() {
-		view.addSubview(textView)
-	}
-	
-	func createConstraints() {
-		textView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-		textView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-		textView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-		textView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-	}
+
+    // MARK: Properties
+
+    var textView: UITextView = {
+        let textView = UITextView()
+        textView.keyboardDismissMode = .interactive
+        textView.isEditable = false
+        textView.font = UIFont.preferredFont(forTextStyle: .body)
+        textView.text = MockDataLoader.shared.longText()
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        return textView
+    }()
+
+    // MARK: Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        view.backgroundColor = .systemBackground
+
+        addSubviews()
+        createConstraints()
+    }
+
+    // MARK: Initialization
+
+    func addSubviews() {
+        view.addSubview(textView)
+    }
+
+    func createConstraints() {
+        textView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        textView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        textView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        textView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
 }

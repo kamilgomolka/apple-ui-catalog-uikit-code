@@ -8,21 +8,21 @@
 import Foundation
 
 struct TableViewSelectionMenuItems {
-	
-	static var all: [MenuItem] {
-		return [
-			MenuItem(
-				name: "Single",
-				viewControllerProvider: { TableViewSelectionSingleViewController() }
-			),
-			MenuItem(
-				name: "Single with deselect",
-				viewControllerProvider: { TableViewSelectionWithDeselectViewController() }
-			),
-			MenuItem(
-				name: "Multiple",
-				viewControllerProvider: { TableViewSelectionMultipleViewController() }
-			)
-		]
-	}
+
+    static var all: [MenuItem] {
+        [
+            MenuItem(
+                name: "Single",
+                viewControllerProvider: { TableViewSelectionSingleViewController() }
+            ),
+            MenuItem(
+                name: "Single with deselect",
+                viewControllerProvider: { TableViewSelectionWithDeselectViewController() }
+            ),
+            MenuItem(
+                name: "Multiple",
+                viewControllerProvider: { TableViewSelectionMultipleViewController() }
+            ),
+        ]
+    }
 }

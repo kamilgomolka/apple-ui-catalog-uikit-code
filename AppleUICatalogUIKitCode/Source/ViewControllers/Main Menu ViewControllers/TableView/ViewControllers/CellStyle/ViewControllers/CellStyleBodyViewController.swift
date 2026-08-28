@@ -8,22 +8,22 @@
 import UIKit
 
 class CellStyleBodyViewController: CellStyleBaseViewController {
-    
-	// MARK: UITableViewDataSource
-	
-	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = super.tableView(tableView, cellForRowAt: indexPath)
-		let sectionType = CellStyleSection.allCases[indexPath.section]
-		
-		switch sectionType {
-		case .subtitle:
-			cell.textLabel?.font = UIFont.preferredFont(forTextStyle: .body)
-			cell.detailTextLabel?.font = UIFont.preferredFont(forTextStyle: .footnote)
-		default:
-			cell.textLabel?.font = UIFont.preferredFont(forTextStyle: .body)
-			cell.detailTextLabel?.font = UIFont.preferredFont(forTextStyle: .body)
-		}
-		
-		return cell
-	}
+
+    // MARK: UITableViewDataSource
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        let sectionType = CellStyleSection.allCases[indexPath.section]
+
+        switch sectionType {
+        case .subtitle:
+            cell.textLabel?.font = UIFont.preferredFont(forTextStyle: .body)
+            cell.detailTextLabel?.font = UIFont.preferredFont(forTextStyle: .footnote)
+        default:
+            cell.textLabel?.font = UIFont.preferredFont(forTextStyle: .body)
+            cell.detailTextLabel?.font = UIFont.preferredFont(forTextStyle: .body)
+        }
+
+        return cell
+    }
 }

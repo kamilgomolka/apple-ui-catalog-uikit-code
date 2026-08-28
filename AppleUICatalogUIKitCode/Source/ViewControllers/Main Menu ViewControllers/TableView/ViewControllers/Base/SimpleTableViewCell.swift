@@ -8,6 +8,6 @@
 import UIKit
 
 class SimpleTableViewCell: UITableViewCell {
-	
-	static let identifier = "SimpleTableViewCell"
+
+    static let identifier = "SimpleTableViewCell"
 }

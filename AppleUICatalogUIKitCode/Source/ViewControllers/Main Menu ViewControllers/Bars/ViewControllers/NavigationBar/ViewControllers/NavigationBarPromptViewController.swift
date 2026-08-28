@@ -8,12 +8,12 @@
 import UIKit
 
 class NavigationBarPromptViewController: BaseNavigationBarViewController {
-	
-	// MARK: Lifecycle
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		navigationItem.prompt = "Example prompt text"
-	}
+
+    // MARK: Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        navigationItem.prompt = "Example prompt text"
+    }
 }

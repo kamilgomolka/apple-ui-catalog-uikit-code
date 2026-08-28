@@ -8,14 +8,14 @@
 import UIKit
 
 class BaseTextFieldViewController: StackViewController {
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-		attachTextFieldDelegate()
-	}
-	
-	func attachTextFieldDelegate() {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        attachTextFieldDelegate()
+    }
+
+    func attachTextFieldDelegate() {
         stackView.arrangedSubviews.forEach { view in
             if let textField = view as? UITextField {
                 textField.delegate = self
@@ -25,18 +25,19 @@ class BaseTextFieldViewController: StackViewController {
 }
 
 extension BaseTextFieldViewController: UITextFieldDelegate {
-    
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard let index = stackView.arrangedSubviews.firstIndex(of: textField),
-              stackView.arrangedSubviews.count > index + 1 else {
+            stackView.arrangedSubviews.count > index + 1
+        else {
             textField.resignFirstResponder()
             return false
         }
-        
+
         if let nextTextField = stackView.arrangedSubviews[index + 1] as? UITextField {
             nextTextField.becomeFirstResponder()
         }
-        
+
         return false
     }
 }

@@ -11,18 +11,18 @@ enum CellAccessoryTypeItem: String, CaseIterable {
     case disclosureIndicator
     case detailDisclosureButton
     case checkmark
-	case detailButton
-    
-	var uiKitValue: UITableViewCell.AccessoryType {
-		switch self {
-		case .disclosureIndicator:
-			return UITableViewCell.AccessoryType.disclosureIndicator
-		case .detailDisclosureButton:
-			return UITableViewCell.AccessoryType.detailDisclosureButton
-		case .checkmark:
-			return UITableViewCell.AccessoryType.checkmark
-		case .detailButton:
-			return UITableViewCell.AccessoryType.detailButton
-		}
-	}
+    case detailButton
+
+    var uiKitValue: UITableViewCell.AccessoryType {
+        switch self {
+        case .disclosureIndicator:
+            return UITableViewCell.AccessoryType.disclosureIndicator
+        case .detailDisclosureButton:
+            return UITableViewCell.AccessoryType.detailDisclosureButton
+        case .checkmark:
+            return UITableViewCell.AccessoryType.checkmark
+        case .detailButton:
+            return UITableViewCell.AccessoryType.detailButton
+        }
+    }
 }

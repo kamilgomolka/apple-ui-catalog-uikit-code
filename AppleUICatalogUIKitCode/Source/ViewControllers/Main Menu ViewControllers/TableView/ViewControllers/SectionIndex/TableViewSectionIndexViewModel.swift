@@ -8,37 +8,37 @@
 import Foundation
 
 class TableViewSectionIndexViewModel {
-    
+
     // MARK: Properties
-    
+
     var letters: [String] = []
     var sections: [String: [Person]] = [:]
-    
+
     private var persons: [Person] = []
-    
+
     // MARK: Functions
-    
+
     func loadData() async {
-		persons = await MockDataLoader.shared.persons()
+        persons = await MockDataLoader.shared.persons()
         createSections()
     }
-    
+
     private func createSections() {
         letters = []
         sections = [:]
-        
+
         persons.sort {
-            ( $0.fullNameLowercased ?? "" ) < ( $1.fullNameLowercased ?? "" )
+            ($0.fullNameLowercased ?? "") < ($1.fullNameLowercased ?? "")
         }
-        
+
         for person in persons {
             let letter = person.fullName?.first?.uppercased() ?? "#"
-            
+
             if letters.last == nil || letters.last != letter {
                 letters.append(letter)
                 sections[letter] = []
             }
-            
+
             sections[letter]?.append(person)
         }
     }
