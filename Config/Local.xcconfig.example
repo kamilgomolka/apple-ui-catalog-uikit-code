@@ -1,0 +1,4 @@
+// Copy to Config/Local.xcconfig (untracked) and fill in your Apple Developer Team ID.
+// Only needed to run on a physical device; Simulator builds work without it.
+
+DEVELOPMENT_TEAM =

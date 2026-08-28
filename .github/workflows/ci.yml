@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Show toolchain
+        run: xcodebuild -version
+
+      # Simulator device names change between Xcode releases; this makes a
+      # destination mismatch diagnosable from the log instead of guesswork.
+      - name: List available destinations
+        run: make destinations
+
+      - name: Build
+        run: make build

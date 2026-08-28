@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+# Keeps the Xcode project file collapsed in diffs and out of GitHub language stats
+*.pbxproj linguist-generated=true
