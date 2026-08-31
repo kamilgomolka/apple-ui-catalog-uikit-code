@@ -36,7 +36,7 @@ class BaseToolbarViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.dataSource = self
         tableView.delegate = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(BaseNavigationBarCell.self, forCellReuseIdentifier: BaseToolbarCell.identifier)
+        tableView.register(BaseToolbarCell.self, forCellReuseIdentifier: BaseToolbarCell.identifier)
         view.addSubview(tableView)
 
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
