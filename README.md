@@ -6,7 +6,7 @@
 [![Xcode](https://img.shields.io/badge/Xcode-26-1575F9.svg)](https://developer.apple.com/xcode/)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
-A programmatic UIKit reference app: each system control is built in code and shown with its public properties exercised, so you can see how Apple's UI actually looks. No third-party libraries, no in-house custom widgets.
+UIKit reference app, views created programatically. Each system control is built in the Swift code, and is shown with its public properties exercised, so you can see how UIKit controls actually look. No third-party libraries, no in-house custom widgets.
 
 iPhone (portrait) and iPad (all orientations). Light and Dark Mode follow the system appearance.
 
