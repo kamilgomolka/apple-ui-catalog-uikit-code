@@ -1,8 +1,8 @@
-PROJECT := AppleUICatalogUIKitCode.xcodeproj
-SCHEME := AppleUICatalogUIKitCode
+PROJECT := UIKitCatalogCode.xcodeproj
+SCHEME := UIKitCatalogCode
 SIMULATOR ?= iPhone 17 Pro
 DESTINATION := platform=iOS Simulator,name=$(SIMULATOR),OS=latest
-SWIFT_SOURCES := AppleUICatalogUIKitCode
+SWIFT_SOURCES := UIKitCatalogCode
 
 .PHONY: build destinations format clean
 

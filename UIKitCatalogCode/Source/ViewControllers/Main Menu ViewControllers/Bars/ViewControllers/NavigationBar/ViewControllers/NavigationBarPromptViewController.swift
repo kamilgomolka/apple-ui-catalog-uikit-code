@@ -1,0 +1,19 @@
+//
+//  NavigationBarPromptViewController.swift
+//  UIKitCatalogCode
+//
+//  Created by Kamil Gomółka on 19/04/2022.
+//
+
+import UIKit
+
+class NavigationBarPromptViewController: BaseNavigationBarViewController {
+
+    // MARK: Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        navigationItem.prompt = "Example prompt text"
+    }
+}

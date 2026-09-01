@@ -1,4 +1,4 @@
-# Apple UI Catalog — UIKit (Code)
+# UIKit Catalog — Programmatic (Views created in Code)
 
 [![CI](https://github.com/kamilgomolka/apple-ui-catalog-uikit-code/actions/workflows/ci.yml/badge.svg)](https://github.com/kamilgomolka/apple-ui-catalog-uikit-code/actions/workflows/ci.yml)
 [![Swift](https://img.shields.io/badge/Swift-6.0-F05138.svg)](https://swift.org)
@@ -33,9 +33,9 @@ Navigation is data, not a coordinator: `MenuItem` is either a nested list, a `vi
 ```
 Config/
 ├── Local.xcconfig.example                  # Template for the untracked Local.xcconfig (Team ID)
-└── AppleUICatalogUIKitCode.xcconfig        # Platform, Swift, signing, versioning, Info.plist keys
+└── UIKitCatalogCode.xcconfig               # Platform, Swift, signing, versioning, Info.plist keys
 
-AppleUICatalogUIKitCode/
+UIKitCatalogCode/
 ├── Source/
 │   ├── Application/
 │   │   ├── AppDelegate.swift
@@ -66,10 +66,10 @@ Xcode's own default warning flags still live in `project.pbxproj`; everything th
 ```bash
 git clone https://github.com/kamilgomolka/apple-ui-catalog-uikit-code.git
 cd apple-ui-catalog-uikit-code
-open AppleUICatalogUIKitCode.xcodeproj
+open UIKitCatalogCode.xcodeproj
 ```
 
-Build and run the `AppleUICatalogUIKitCode` scheme on an iOS 26+ Simulator. Signing is not required for the Simulator. To run on a device, copy the local configuration template and fill in your Apple Developer Team ID:
+Build and run the `UIKitCatalogCode` scheme on an iOS 26+ Simulator. Signing is not required for the Simulator. To run on a device, copy the local configuration template and fill in your Apple Developer Team ID:
 
 ```bash
 cp Config/Local.xcconfig.example Config/Local.xcconfig
