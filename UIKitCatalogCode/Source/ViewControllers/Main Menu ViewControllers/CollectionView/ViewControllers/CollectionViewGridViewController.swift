@@ -48,7 +48,7 @@ class CollectionViewGridViewController: UIViewController {
         // Item
         //
         let itemSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.0),
+            widthDimension: .fractionalWidth(1.0 / 3.0),
             heightDimension: .fractionalHeight(1.0))
 
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
